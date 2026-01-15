@@ -1238,6 +1238,34 @@ class ScopaBot:
         # Sort scores
         scored.sort(key=lambda x: x[0], reverse=True)
         
+        # === v12.22: MINIMAX REATTIVATO come tiebreaker ===
+        # Usato solo in endgame quando l'euristica ha punteggi molto vicini
+        if should_use_minimax(state) and len(scored) > 1:
+            best_score = scored[0][0]
+            second_score = scored[1][0]
+            heuristic_diff = best_score - second_score
+            
+            # Solo se mosse molto vicine (diff < 50) - euristica non è sicura
+            if heuristic_diff < 50:
+                # Raccogli candidati con score simile (max 3)
+                candidates = [x for x in scored if x[0] >= best_score - 50][:3]
+                
+                if len(candidates) > 1:
+                    # Usa minimax per decidere tra candidati equivalenti
+                    best_mm_score = -9999
+                    best_move = candidates[0][1]
+                    my_player = state.current_player
+                    
+                    for _, move, _ in candidates:
+                        # Applica mossa e valuta con minimax
+                        next_state = apply_move(clone_game_state(state), move)
+                        mm_score, _ = minimax(next_state, 6, my_player, False)  # False = next is opponent
+                        if mm_score > best_mm_score:
+                            best_mm_score = mm_score
+                            best_move = move
+                    
+                    return best_move
+        
         # === MONTE CARLO v12.5: Smart MC con protezioni ===
         if use_monte_carlo and len(scored) > 1:
             best_score = scored[0][0]
