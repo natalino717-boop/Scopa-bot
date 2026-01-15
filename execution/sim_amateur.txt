@@ -1,0 +1,1607 @@
+Benchmark vs HumanAmateur (400 games)...
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3B → prende [3C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3D → prende [AS, 2D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7S → prende [4B, 3S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → prende [2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [7S, AC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3D → prende [3S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CD → prende [5D, 3D, AC] SCOPA!
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-7000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5C → prende [4C, AC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7D → prende [7B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CS → prende [3B, 6S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → prende [2C, 4C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RC → prende [CC, AB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5C → prende [4C, AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RC → prende [RD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CS → prende [6S, 3B] SCOPA!
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RD → prende [FD, 2D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → prende [AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4S → prende [4B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CC → prende [CS]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → prende [4S, 3S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → prende [AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5D → prende [3D, 2S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → prende [FB, 2D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [6D, 2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [4S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [4S, 5D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → prende [6S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [RB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → prende [3C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4S → prende [4C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7S → prende [7C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → prende [2S, 4C]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AC → prende [AD]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → prende [AS, FD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4S → prende [3C, AD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RC → prende [RS]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3C → prende [3S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5B → prende [5C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4D → prende [3S, AC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5C → prende [5S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [FD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 7C → prende [4B, 3C]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 4C → prende [4D]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca FC → prende [6C, 2S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → prende [2S, 4C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6D → prende [6B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2D → prende [2B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AC → prende [AD]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5B → prende [5D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → prende [6D, AS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FD → prende [FC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → prende [6C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FC → prende [FB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6D → prende [6S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RD → prende [RC]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RD → prende [2D, FS] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [4C] SCOPA!
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5S → prende [2S, 3D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3D → prende [3S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CS → prende [FS, AC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RC → prende [4S, 6C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AD → prende [AB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5S → prende [5D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CD → prende [CC]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → prende [4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → prende [FD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [3B, AC, 2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3S → prende [3D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [7S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → prende [5B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2B → prende [2D]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AB → prende [AD]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4D → prende [4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RS → prende [RB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → scarta
+  50/400 (66.0%)
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [3B, 7C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 7D → prende [AD, 6B] SCOPA!
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → prende [5C, AB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5S → prende [3D, 2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [RB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CB → prende [7B, 2D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7D → prende [7S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6D → prende [6S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CC → prende [4B, 5B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RS → prende [RC]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2S → prende [2B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4S → prende [4D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → prende [5C, 2D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → prende [4B, AD, 3C] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CC → prende [CS]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3D → prende [AC, 2D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [FC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6D → prende [6C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5D → prende [3C, 2B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2B → prende [2D]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7B → prende [4D, AD, 2D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → prende [5B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → prende [6C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3D → prende [3C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CB → prende [FS, AS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7S → prende [7C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7B → prende [7S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → prende [3B, 4B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → prende [5S, 4B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [7S, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [5B, 4C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → prende [4C, 6S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7D → prende [7C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → prende [FD, 2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [AS, 3S] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RC → prende [RS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2C → prende [2S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FS → prende [FC]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2B → prende [2C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RD → prende [3C, 7C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7D → prende [AS, 6D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3C → prende [3D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → prende [AS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → prende [5B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → prende [2C, 6B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → prende [4B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RD → prende [RS]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7D → prende [3D, 4B] SCOPA!
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4S → prende [4C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → prende [RD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5S → prende [5D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [FC]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RS → prende [4B, 6C]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 7D → prende [3C, 4S]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 7D → prende [7C]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 5C → prende [4D, AC]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 5S → prende [3B, 2D]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3S → prende [AS, 2S] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → prende [3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → prende [4C, 2C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CD → prende [7C, 2S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → prende [CD, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7C → prende [7B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4C → prende [4D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7C → prende [6C, AB]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5D → prende [4B, AS]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [3C, 5C]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AS → prende [AB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RS → prende [RC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AB → prende [AS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → prende [AB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [5D, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2B → prende [2S]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca CC → prende [FS, AD]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RB → prende [4C, 6B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → prende [AB, 6D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → scarta
+  100/400 (70.0%)
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → prende [FD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [CC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AS → prende [AD]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6C → prende [5D, AB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → prende [7C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [FD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AS → prende [AD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5S → prende [4D, AB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → prende [6S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → prende [7C, AC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [FC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → prende [AC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3C → prende [3D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [FC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → prende [3C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CD → prende [FB, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → prende [5C, AD]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → prende [3S, 4C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → prende [4S, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → prende [FC] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5D → prende [5B] SCOPA!
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → prende [2D, FB]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7D → prende [2B, 5D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → prende [6B, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [4C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → prende [2D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [RS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [4D, 5C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CB → prende [FS, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7D → prende [2B, 4D, AD] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [CS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5B → prende [3D, 2C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7D → prende [7B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → prende [AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [6S, 4D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → prende [2B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7S → prende [3B, 4B] SCOPA!
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4B → prende [4D]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RS → prende [RB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6D → prende [AB, 5B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2B → prende [2C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → prende [3C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → prende [5S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RC → prende [7S, 3B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AC → prende [AB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → prende [6S, 4D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4S → prende [AD, 3B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6S → prende [6B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → prende [6C, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5B → prende [AB, 4S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7C → prende [AD, 6S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7B → prende [6C, AC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → prende [AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → prende [6D, AD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → prende [6S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RC → prende [CB, AS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2C → prende [2B]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FB → prende [FD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → prende [6D]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3D → prende [3C]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4S → prende [4C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6B → prende [6S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → prende [RS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [5D, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [AS, FB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 3D → prende [2C, AB]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 6C → prende [6B]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → prende [3S, AD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FB → prende [FD]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca RD → prende [RB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+  150/400 (65.3%)
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → prende [6B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → prende [3B, 4B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → prende [RC]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5C → prende [AC, 4B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3B → prende [3D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CD → prende [5D, 4D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → prende [AS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → prende [AB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → prende [3D, 6S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → prende [2D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AD → prende [AB]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AC → prende [AS]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RC → prende [FC, 2C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca RC → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → prende [3C, AS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FB → prende [FS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → prende [6C, AC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5C → prende [5B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2B → prende [2S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [FD, AD]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → prende [3B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CS → prende [3D, 6S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → prende [RC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [2D, 6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [RD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6B → prende [5C, AC]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RS → prende [4C, 6C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5S → prende [AB, 4B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2B → prende [2S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CC → prende [CD]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CS → prende [7S, 2S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → prende [6D, AD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → prende [4C, 3S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [RC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → prende [AD]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RB → prende [6D, 4S]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6B → prende [5C, AS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → prende [3B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → prende [6B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2S → prende [2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4S → prende [4D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CD → prende [4D, 5C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RS → prende [RB]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → prende [4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → prende [5C, AB]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4S → prende [4B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → prende [6D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7B → prende [3D, 4C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CC → prende [CB]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RB → prende [FD, 2C]
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 6C → prende [6S]
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 4C → prende [3C, AD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RD → prende [RS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6B → prende [6S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FC → prende [FB]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7B → prende [6S, AB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5D → prende [2B, 3B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [RC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → prende [3B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2B → prende [2S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6B → prende [6C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → prende [5D, AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3B → prende [3C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CC → prende [5C, 4D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2B → prende [2C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → prende [7B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FC → prende [FD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5S → prende [3B, 2S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RD → prende [FD, 2C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7D → prende [7C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [6B]
+  200/400 (63.0%)
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CC → prende [4D, 5D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RB → prende [RC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CC → prende [CD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FD → prende [FC] SCOPA!
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7D → prende [4B, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → prende [5D, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → prende [AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → prende [3S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7C → prende [AC, 6D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → prende [AC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → prende [2B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7D → prende [7C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [2S, FD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → prende [RD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → prende [FC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → prende [5D, 3C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [6C, AD, 2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5B → prende [5D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RC → prende [CS, AB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [4B, 3B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RC → prende [RS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AB → prende [AC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FB → prende [FS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → prende [2D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RC → prende [CS, AB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7C → prende [7B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RD → prende [RC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CD → prende [CS] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4S → prende [4D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → prende [5S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [FD, 2D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7C → prende [5C, 2B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CB → prende [4D, 3B, 2C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → prende [4S, 2D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CD → prende [7B, 2S]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7D → prende [2C, 5B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RB → prende [CS, AB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → prende [6B, AS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RB → prende [RD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FC → prende [6D, 2D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5D → prende [3B, 2C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → prende [AS]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → prende [5D, 2S]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 5D → prende [5B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FS → prende [AD, 7S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2S → prende [2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [6S, 2S]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FS → prende [FB] SCOPA!
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3S → prende [3B] SCOPA!
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → prende [3S, 4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → prende [7C, 2S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → prende [6B, AD]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3B → prende [3D]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 4B → prende [4D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RB → prende [RC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CS → prende [FS, AC]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2B → prende [2D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AD → prende [AS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7B → prende [7S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CS → prende [5B, 4B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3S → prende [3D]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FC → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RB → prende [7B, 3S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → prende [5D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RC → prende [RB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → prende [5C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FD → prende [FC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2C → prende [2D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4S → prende [4D]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3S → prende [3D]
+  250/400 (62.8%)
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → prende [CD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6D → prende [6B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CC → prende [CB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → prende [5S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AD → prende [AB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FS → prende [FB] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FC → prende [FD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CC → prende [FD, AB]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3D → prende [3B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RC → prende [6C, 4C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → prende [5D, 2D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [3D, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → prende [4C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CC → prende [CS]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2D → prende [2B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → prende [4B, 6C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AS → prende [AC]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6D → prende [6B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 3C → prende [3S] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → prende [FB, 2C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4B → prende [4S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → prende [3C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → prende [CC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RS → prende [RB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AS → prende [AB]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [4C, 5D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4C → prende [4D]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FB → prende [6D, 2S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 7S → prende [7B] SCOPA!
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6C → prende [5C, AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5C → prende [5D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [6S, AC] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → prende [7S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → prende [AB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FS → prende [7C, AS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6C → prende [6S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → prende [2C, 3S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → prende [3D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RC → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5C → prende [5S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6B → prende [6D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7C → prende [7B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7D → prende [4D, 3S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CS → prende [AS, FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RB → prende [RC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → prende [7S, AD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FS → prende [2B, 6D] SCOPA!
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → prende [AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → prende [6S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5D → prende [5S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → prende [3C, 6C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → prende [7S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5D → prende [5B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RD → prende [RB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → prende [5B, 3S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RB → prende [6C, 3C, AD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CC → prende [CD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FC → prende [FB] SCOPA!
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → prende [FD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → prende [6C, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [FC, 2S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → prende [6D, 2C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → prende [5B, 2B] SCOPA!
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3C → prende [3S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3C → prende [3D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4B → prende [4D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → prende [RC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CB → prende [5C, 4B]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca FD → prende [6S, 2S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → prende [5B, AB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7D → prende [7B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2S → prende [2D]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6C → prende [6B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → prende [4B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5S → prende [5C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [RD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7S → prende [7C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → prende [RC] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5C → prende [5B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AD → prende [AC]
+  300/400 (64.3%)
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6C → prende [5B, AS] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 4B → prende [4S]
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca FC → prende [FS]
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca AB → prende [AD]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca RC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 2C → prende [2S]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2S → prende [2D]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4B → prende [4S]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AS → prende [AC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RS → prende [RC]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → prende [5D, 4S] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4S → prende [4B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2D → prende [2C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FC → prende [FD]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 4S → prende [3D, AC]
+[SOLVER] Perfect Endgame: Score=7000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3C → prende [AC, 2C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3B → prende [3S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2B → prende [2D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5B → prende [2D, 3S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5C → prende [AD, 4B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [7C, AD]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CD → prende [CC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CD → prende [3C, 6C]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FC → prende [FB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5D → prende [5B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RD → prende [5D, 4D, AB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5S → prende [3C, 2C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6B → prende [6S]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FD → prende [5D, 3D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FD → prende [6S, 2S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → prende [CD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [4B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7S → prende [6B, AS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7C → prende [3S, 4D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca RD → prende [RB]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CD → prende [FD, AS]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RB → prende [RS]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4B → prende [4C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RC → prende [7C, 3D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [6B] SCOPA!
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CD → prende [CC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FS → prende [FB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AC → prende [AS]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CD → prende [2B, 7S]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FD → prende [5D, 3B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5S → prende [5D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → prende [2S, 7S, AB]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FS → prende [7C, AC]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6S → prende [6D]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3D → prende [3C]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca AB → prende [AD]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RB → prende [RS]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → prende [5B, 4D]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AC → prende [AD]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7C → prende [3C, 4S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5B → prende [5D]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2D → prende [2B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2S → prende [2C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5C → prende [5D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FD → prende [FB]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6C → prende [6B]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FD → prende [FC]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7B → prende [AD, 6B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca RC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CS → prende [CC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5S → prende [5D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6S → prende [6C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3S → prende [AS, 2B]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [3C, 4S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → prende [6C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6D → prende [5S, AB]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7D → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 2B → prende [2D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 6D → prende [6C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AC → prende [AB]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4C → prende [4S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca FB → prende [FS]
+  350/400 (63.7%)
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3D → prende [3S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca FB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CC → prende [4D, 5C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → prende [4C, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6D → prende [6S]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4C → prende [4B]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 3D → prende [3B]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6C → prende [6B] SCOPA!
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5S → prende [3D, 2B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CD → prende [CS]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca FS → prende [2D, 6C]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca 4B → prende [3C, AS]
+[SOLVER] Perfect Endgame: Score=6000, Move=Gioca CS → prende [CC]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RD → prende [7S, 3S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4D → prende [4C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4C → prende [3D, AC]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5C → prende [5B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6C → prende [4B, 2C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5S → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AC → prende [AB]
+[SOLVER] Perfect Endgame: Score=-6000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca FD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca RC → prende [FD, 2D]
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FD → prende [5S, 3S] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RS → prende [CC, AS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RS → prende [RB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 7D → prende [7B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [5D, 3D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2S → prende [2B]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AS → prende [AD]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 5S → prende [5C]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → prende [7B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AS → prende [AC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6C → prende [6S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5D → prende [3C, 2B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5C → prende [3S, 2C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → prende [AD, 5C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CC → prende [CB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6B → prende [4B, 2B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CD → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7C → prende [5S, 2D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca AS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6C → prende [6B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → prende [3S, 7B] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 5S → prende [5B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5D → prende [AD, 4D]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca FS → prende [7C, AS]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RC → prende [RD]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 6D → prende [6C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 3S → prende [3C]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 5B → prende [5D]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 2C → prende [2B]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → prende [4B]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 5S → prende [4B, AC]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3C → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FB → prende [3C, 4B, AD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RC → prende [RD]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FD → prende [FS]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca CB → prende [CC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-3000, Move=Gioca 5B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 5S → prende [5C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 2B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AD → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca RD → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca CD → prende [CB]
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FD → prende [7S, AS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca FB → prende [FS]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7S → prende [AC, 6B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CS → prende [CB]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 6C → prende [4D, 2S]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca AD → prende [AC]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7B → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=-5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca RS → prende [FS, 2C]
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6C → prende [6D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RC → prende [7B, 3S]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 6B → prende [5B, AD]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 4C → prende [4D]
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca 7D → prende [7B]
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca RC → prende [FS, 2C] SCOPA!
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3B → scarta
+[SOLVER] Perfect Endgame: Score=5000, Move=Gioca 3S → prende [3B]
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca FB → prende [FC]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 6B → prende [AB, 5C]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca RB → scarta
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca 7S → prende [7B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 3S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RD → prende [FC, 2S]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca CB → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 4S → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca RS → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 5D → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca CC → scarta
+[SOLVER] Perfect Endgame: Score=4000, Move=Gioca AC → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4B → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 2S → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 4C → scarta
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 3S → prende [3B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 5C → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AB → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca CB → prende [7C, 2C]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca AC → prende [AB]
+[SOLVER] Perfect Endgame: Score=-1000, Move=Gioca 4C → prende [4B]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3C → prende [3B]
+[SOLVER] Perfect Endgame: Score=0, Move=Gioca CB → prende [FD, AD]
+[SOLVER] Perfect Endgame: Score=1000, Move=Gioca 6C → scarta
+[SOLVER] Perfect Endgame: Score=2000, Move=Gioca 7D → prende [7S]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca CB → prende [CD]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FC → scarta
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 4D → prende [4S]
+[SOLVER] Perfect Endgame: Score=-2000, Move=Gioca 3D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca CS → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7C → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 6D → scarta
+[SOLVER] Perfect Endgame: Score=-4000, Move=Gioca 7B → prende [7C]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 2C → prende [2B]
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca FS → scarta
+[SOLVER] Perfect Endgame: Score=3000, Move=Gioca 6C → prende [5C, AS]
+  400/400 (63.2%)
+
+==================================================
+BENCHMARK RESULTS (400 games)
+==================================================
+Win Rate:      63.2%
+Wins/Losses:   253/114 (draws: 33)
+Avg Points:    Bot 2.93 vs Opp 1.68
+Avg Margin:    +1.25
+
+Point Breakdown (bot win rate):
+  Cards:      268/400 (67.0%)
+  Denari:     217/400 (54.2%)
+  Settebello: 223/400 (55.8%)
+  Primiera:   251/400 (62.7%)
+  Avg Scope:  Bot 0.53 vs Opp 0.37
+==================================================

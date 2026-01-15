@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Scopa Bot AI (Eyes)",
+  "version": "1.2",
+  "description": "Connects browser Scopa game to Python AI Backend - DOM-only stable version.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://192.168.0.138:8000/*",
+    "http://localhost:8000/*",
+    "*://*.giocaonlinesrl.it/*",
+    "*://*.goldbet.it/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Scopa Bot"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "all_frames": true
+    }
+  ]
+}

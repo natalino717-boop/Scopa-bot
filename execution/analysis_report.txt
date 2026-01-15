@@ -1,0 +1,14 @@
+Found 2 diaries in game_diaries
+Found 1 diaries in .tmp/game_diaries
+
+ANALYSIS COMPLETE. Found 4 potential issues.
+
+=== CRITICAL MISTAKES (Missed 7D/Scopa) ===
+
+=== WARNINGS (Suboptimal Moves) ===
+[1768342766] Move 15: Chose Gioca 7C → scarta (score -73) instead of Gioca 5C → scarta (score 32). Diff: 105
+[1768342766] Move 16: Chose Gioca 7B → scarta (score -73) instead of Gioca 5C → scarta (score 32). Diff: 105
+
+=== INFO (Opponent Clears) ===
+[1768342766] Move 7: Opponent found empty table next turn (Possible Scopa/Capture All). Check if we left an easy sum.
+[1768341155] Move 1: Opponent found empty table next turn (Possible Scopa/Capture All). Check if we left an easy sum.

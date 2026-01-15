@@ -1,0 +1,5 @@
+# Dipendenze Python
+# Aggiungi qui le librerie necessarie per gli script in execution/
+
+python-dotenv>=1.0.0
+requests>=2.31.0

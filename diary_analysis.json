@@ -1,0 +1,1922 @@
+{
+    "games": [
+        {
+            "game_id": 1768327347,
+            "timestamp": "2026-01-13 19:17:15",
+            "moves": [
+                {
+                    "timestamp": 1768328076.6134558,
+                    "move_number": 1,
+                    "request": {
+                        "hand": [
+                            "6d",
+                            "3c",
+                            "9d"
+                        ],
+                        "table": [
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 0,
+                    "decision": {
+                        "card_played": "9d",
+                        "is_capture": true,
+                        "description": "Gioca CD \u2192 prende [AC, 2B, 6S]"
+                    },
+                    "error": null,
+                    "newly_seen": 7,
+                    "memory_after": 7
+                },
+                {
+                    "timestamp": 1768328099.88639,
+                    "move_number": 2,
+                    "request": {
+                        "hand": [
+                            "6d",
+                            "3c"
+                        ],
+                        "table": [
+                            "5b",
+                            "4b"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 7,
+                    "decision": {
+                        "card_played": "3c",
+                        "is_capture": false,
+                        "description": "Gioca 3C \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 8
+                },
+                {
+                    "timestamp": 1768328108.281239,
+                    "move_number": 3,
+                    "request": {
+                        "hand": [
+                            "6d"
+                        ],
+                        "table": [
+                            "3c"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 8,
+                    "decision": {
+                        "card_played": "6d",
+                        "is_capture": false,
+                        "description": "Gioca 6D \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 9
+                },
+                {
+                    "timestamp": 1768328114.9249978,
+                    "move_number": 4,
+                    "request": {
+                        "hand": [
+                            "3d",
+                            "7c",
+                            "8s"
+                        ],
+                        "table": [
+                            "6d",
+                            "3c",
+                            "10c"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 9,
+                    "decision": {
+                        "card_played": "3d",
+                        "is_capture": true,
+                        "description": "Gioca 3D \u2192 prende [3C]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 13
+                },
+                {
+                    "timestamp": 1768328123.229155,
+                    "move_number": 5,
+                    "request": {
+                        "hand": [
+                            "7c",
+                            "8s"
+                        ],
+                        "table": [
+                            "10c"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 13,
+                    "decision": {
+                        "card_played": "8s",
+                        "is_capture": false,
+                        "description": "Gioca FS \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 14
+                },
+                {
+                    "timestamp": 1768328128.214324,
+                    "move_number": 6,
+                    "request": {
+                        "hand": [
+                            "7c"
+                        ],
+                        "table": [
+                            "10c",
+                            "2s",
+                            "8s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 14,
+                    "decision": {
+                        "card_played": "7c",
+                        "is_capture": false,
+                        "description": "Gioca 7C \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 15
+                },
+                {
+                    "timestamp": 1768328135.444103,
+                    "move_number": 7,
+                    "request": {
+                        "hand": [
+                            "4c",
+                            "9c",
+                            "6b"
+                        ],
+                        "table": [
+                            "7c",
+                            "2s",
+                            "8s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 15,
+                    "decision": {
+                        "card_played": "9c",
+                        "is_capture": true,
+                        "description": "Gioca CC \u2192 prende [7C, 2S]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 19
+                },
+                {
+                    "timestamp": 1768328146.374906,
+                    "move_number": 8,
+                    "request": {
+                        "hand": [
+                            "4c",
+                            "6b"
+                        ],
+                        "table": [
+                            "8s",
+                            "1s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 19,
+                    "decision": {
+                        "card_played": "4c",
+                        "is_capture": false,
+                        "description": "Gioca 4C \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 20
+                },
+                {
+                    "timestamp": 1768328151.348795,
+                    "move_number": 9,
+                    "request": {
+                        "hand": [
+                            "6b"
+                        ],
+                        "table": [
+                            "8s",
+                            "4c",
+                            "1s",
+                            "7s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 20,
+                    "decision": {
+                        "card_played": "6b",
+                        "is_capture": false,
+                        "description": "Gioca 6B \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 21
+                },
+                {
+                    "timestamp": 1768328160.55406,
+                    "move_number": 10,
+                    "request": {
+                        "hand": [
+                            "4s",
+                            "3b",
+                            "8b"
+                        ],
+                        "table": [
+                            "8s",
+                            "1s",
+                            "7s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 21,
+                    "decision": {
+                        "card_played": "8b",
+                        "is_capture": true,
+                        "description": "Gioca FB \u2192 prende [FS]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 25
+                },
+                {
+                    "timestamp": 1768328169.507116,
+                    "move_number": 11,
+                    "request": {
+                        "hand": [
+                            "4s",
+                            "3b"
+                        ],
+                        "table": [
+                            "1s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 25,
+                    "decision": {
+                        "card_played": "4s",
+                        "is_capture": false,
+                        "description": "Gioca 4S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 26
+                },
+                {
+                    "timestamp": 1768328172.843133,
+                    "move_number": 12,
+                    "request": {
+                        "hand": [
+                            "4s",
+                            "3b"
+                        ],
+                        "table": [
+                            "1s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 26,
+                    "decision": {
+                        "card_played": "4s",
+                        "is_capture": false,
+                        "description": "Gioca 4S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 0,
+                    "memory_after": 26
+                },
+                {
+                    "timestamp": 1768328175.416215,
+                    "move_number": 13,
+                    "request": {
+                        "hand": [
+                            "4s",
+                            "3b"
+                        ],
+                        "table": [
+                            "1s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 26,
+                    "decision": {
+                        "card_played": "4s",
+                        "is_capture": false,
+                        "description": "Gioca 4S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 0,
+                    "memory_after": 26
+                },
+                {
+                    "timestamp": 1768328182.110647,
+                    "move_number": 14,
+                    "request": {
+                        "hand": [
+                            "3b"
+                        ],
+                        "table": [],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 26,
+                    "decision": {
+                        "card_played": "3b",
+                        "is_capture": false,
+                        "description": "Gioca 3B \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 27
+                },
+                {
+                    "timestamp": 1768328187.479467,
+                    "move_number": 15,
+                    "request": {
+                        "hand": [
+                            "7d",
+                            "1b",
+                            "1d"
+                        ],
+                        "table": [
+                            "3b",
+                            "2c"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 27,
+                    "decision": {
+                        "card_played": "1b",
+                        "is_capture": false,
+                        "description": "Gioca AB \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 31
+                },
+                {
+                    "timestamp": 1768328198.558105,
+                    "move_number": 16,
+                    "request": {
+                        "hand": [
+                            "7d",
+                            "1d"
+                        ],
+                        "table": [
+                            "1b"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d",
+                            "5d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 31,
+                    "decision": {
+                        "card_played": "1d",
+                        "is_capture": true,
+                        "description": "Gioca AD \u2192 prende [AB] SCOPA!"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 32
+                },
+                {
+                    "timestamp": 1768328204.348365,
+                    "move_number": 17,
+                    "request": {
+                        "hand": [
+                            "7d"
+                        ],
+                        "table": [
+                            "3s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d",
+                            "5d",
+                            "3s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 32,
+                    "decision": {
+                        "card_played": "7d",
+                        "is_capture": false,
+                        "description": "Gioca 7D \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 33
+                },
+                {
+                    "timestamp": 1768328210.433558,
+                    "move_number": 18,
+                    "request": {
+                        "hand": [
+                            "5s",
+                            "2d",
+                            "9s"
+                        ],
+                        "table": [
+                            "7d",
+                            "3s",
+                            "4d"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d",
+                            "5d",
+                            "3s",
+                            "4d",
+                            "5s",
+                            "2d",
+                            "9s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 33,
+                    "decision": {
+                        "card_played": "9s",
+                        "is_capture": false,
+                        "description": "Gioca CS \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 37
+                },
+                {
+                    "timestamp": 1768328221.325109,
+                    "move_number": 19,
+                    "request": {
+                        "hand": [
+                            "5s",
+                            "2d"
+                        ],
+                        "table": [
+                            "4d",
+                            "9s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d",
+                            "5d",
+                            "3s",
+                            "4d",
+                            "5s",
+                            "2d",
+                            "9s",
+                            "10d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 37,
+                    "decision": {
+                        "card_played": "5s",
+                        "is_capture": false,
+                        "description": "Gioca 5S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 38
+                },
+                {
+                    "timestamp": 1768328225.8820312,
+                    "move_number": 20,
+                    "request": {
+                        "hand": [
+                            "2d"
+                        ],
+                        "table": [
+                            "4d",
+                            "5s",
+                            "8c",
+                            "9s"
+                        ],
+                        "seen_history": [
+                            "6d",
+                            "3c",
+                            "9d",
+                            "1c",
+                            "4b",
+                            "2b",
+                            "6s",
+                            "5b",
+                            "9b",
+                            "10c",
+                            "3d",
+                            "7c",
+                            "8s",
+                            "6c",
+                            "2s",
+                            "10b",
+                            "4c",
+                            "9c",
+                            "6b",
+                            "1s",
+                            "7s",
+                            "10s",
+                            "4s",
+                            "3b",
+                            "8b",
+                            "7b",
+                            "5c",
+                            "2c",
+                            "7d",
+                            "1b",
+                            "1d",
+                            "5d",
+                            "3s",
+                            "4d",
+                            "5s",
+                            "2d",
+                            "9s",
+                            "10d",
+                            "8c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 38,
+                    "decision": {
+                        "card_played": "2d",
+                        "is_capture": false,
+                        "description": "Gioca 2D \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 39
+                }
+            ],
+            "total_moves": 20,
+            "final_memory": 39
+        },
+        {
+            "game_id": 1768328235,
+            "timestamp": "2026-01-13 19:34:24",
+            "moves": [
+                {
+                    "timestamp": 1768328942.182288,
+                    "move_number": 1,
+                    "request": {
+                        "hand": [
+                            "1s",
+                            "4b",
+                            "3s"
+                        ],
+                        "table": [
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 0,
+                    "decision": {
+                        "card_played": "4b",
+                        "is_capture": true,
+                        "description": "Gioca 4B \u2192 prende [4D]"
+                    },
+                    "error": null,
+                    "newly_seen": 7,
+                    "memory_after": 7
+                },
+                {
+                    "timestamp": 1768328967.7124438,
+                    "move_number": 2,
+                    "request": {
+                        "hand": [
+                            "1s",
+                            "4b",
+                            "3s"
+                        ],
+                        "table": [
+                            "3c",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 7,
+                    "decision": {
+                        "card_played": "4b",
+                        "is_capture": true,
+                        "description": "Gioca 4B \u2192 prende [4D]"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 8
+                },
+                {
+                    "timestamp": 1768328973.108536,
+                    "move_number": 3,
+                    "request": {
+                        "hand": [
+                            "1s",
+                            "4b",
+                            "3s"
+                        ],
+                        "table": [
+                            "3c",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 8,
+                    "decision": {
+                        "card_played": "4b",
+                        "is_capture": true,
+                        "description": "Gioca 4B \u2192 prende [4D]"
+                    },
+                    "error": null,
+                    "newly_seen": 0,
+                    "memory_after": 8
+                },
+                {
+                    "timestamp": 1768328983.8511438,
+                    "move_number": 4,
+                    "request": {
+                        "hand": [
+                            "1s",
+                            "3s"
+                        ],
+                        "table": [
+                            "8b"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 8,
+                    "decision": {
+                        "card_played": "1s",
+                        "is_capture": false,
+                        "description": "Gioca AS \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 9
+                },
+                {
+                    "timestamp": 1768328991.585866,
+                    "move_number": 5,
+                    "request": {
+                        "hand": [
+                            "3s"
+                        ],
+                        "table": [
+                            "8b"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 9,
+                    "decision": {
+                        "card_played": "3s",
+                        "is_capture": false,
+                        "description": "Gioca 3S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 10
+                },
+                {
+                    "timestamp": 1768328997.762103,
+                    "move_number": 6,
+                    "request": {
+                        "hand": [
+                            "6c",
+                            "1d",
+                            "5s"
+                        ],
+                        "table": [
+                            "3s",
+                            "8b",
+                            "6b"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 10,
+                    "decision": {
+                        "card_played": "6c",
+                        "is_capture": true,
+                        "description": "Gioca 6C \u2192 prende [6B]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 14
+                },
+                {
+                    "timestamp": 1768329006.093206,
+                    "move_number": 7,
+                    "request": {
+                        "hand": [
+                            "1d",
+                            "5s"
+                        ],
+                        "table": [
+                            "3s",
+                            "8b",
+                            "9d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 14,
+                    "decision": {
+                        "card_played": "5s",
+                        "is_capture": false,
+                        "description": "Gioca 5S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 15
+                },
+                {
+                    "timestamp": 1768329010.535692,
+                    "move_number": 8,
+                    "request": {
+                        "hand": [
+                            "1d"
+                        ],
+                        "table": [
+                            "3s",
+                            "8b",
+                            "9d",
+                            "10d",
+                            "5s"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 15,
+                    "decision": {
+                        "card_played": "1d",
+                        "is_capture": false,
+                        "description": "Gioca AD \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 16
+                },
+                {
+                    "timestamp": 1768329019.0528388,
+                    "move_number": 9,
+                    "request": {
+                        "hand": [
+                            "7s",
+                            "6d",
+                            "4s"
+                        ],
+                        "table": [
+                            "3s",
+                            "8b",
+                            "9d",
+                            "10d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 16,
+                    "decision": {
+                        "card_played": "4s",
+                        "is_capture": false,
+                        "description": "Gioca 4S \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 20
+                },
+                {
+                    "timestamp": 1768329023.8942459,
+                    "move_number": 10,
+                    "request": {
+                        "hand": [
+                            "7s",
+                            "6d"
+                        ],
+                        "table": [
+                            "3s",
+                            "8b",
+                            "9d",
+                            "10d",
+                            "2s",
+                            "4s"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 20,
+                    "decision": {
+                        "card_played": "7s",
+                        "is_capture": true,
+                        "description": "Gioca 7S \u2192 prende [3S, 4S]"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 21
+                },
+                {
+                    "timestamp": 1768329030.615936,
+                    "move_number": 11,
+                    "request": {
+                        "hand": [
+                            "6d"
+                        ],
+                        "table": [
+                            "8b",
+                            "9d",
+                            "10d",
+                            "2s",
+                            "5b"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 21,
+                    "decision": {
+                        "card_played": "6d",
+                        "is_capture": false,
+                        "description": "Gioca 6D \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 22
+                },
+                {
+                    "timestamp": 1768329041.108308,
+                    "move_number": 12,
+                    "request": {
+                        "hand": [
+                            "8c",
+                            "7b",
+                            "7d"
+                        ],
+                        "table": [
+                            "8b",
+                            "9d",
+                            "10d",
+                            "2s",
+                            "6d",
+                            "5b",
+                            "4c"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 22,
+                    "decision": {
+                        "card_played": "7b",
+                        "is_capture": true,
+                        "description": "Gioca 7B \u2192 prende [2S, 5B]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 26
+                },
+                {
+                    "timestamp": 1768329054.492786,
+                    "move_number": 13,
+                    "request": {
+                        "hand": [
+                            "8c",
+                            "7b"
+                        ],
+                        "table": [
+                            "8b",
+                            "9d",
+                            "10d",
+                            "6d",
+                            "4c",
+                            "1b"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 26,
+                    "decision": {
+                        "card_played": "7b",
+                        "is_capture": true,
+                        "description": "Gioca 7B \u2192 prende [6D, AB]"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 27
+                },
+                {
+                    "timestamp": 1768329061.409919,
+                    "move_number": 14,
+                    "request": {
+                        "hand": [
+                            "8c"
+                        ],
+                        "table": [
+                            "8b",
+                            "9d",
+                            "10d",
+                            "4c",
+                            "3d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b",
+                            "3d"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 27,
+                    "decision": {
+                        "card_played": "8c",
+                        "is_capture": true,
+                        "description": "Gioca FC \u2192 prende [FB]"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 28
+                },
+                {
+                    "timestamp": 1768329069.9300401,
+                    "move_number": 15,
+                    "request": {
+                        "hand": [
+                            "10b",
+                            "9b",
+                            "10s"
+                        ],
+                        "table": [
+                            "9d",
+                            "10d",
+                            "4c",
+                            "3d",
+                            "2c"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b",
+                            "3d",
+                            "10b",
+                            "9b",
+                            "10s",
+                            "2c"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 28,
+                    "decision": {
+                        "card_played": "10b",
+                        "is_capture": true,
+                        "description": "Gioca RB \u2192 prende [RD]"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 32
+                },
+                {
+                    "timestamp": 1768329090.965972,
+                    "move_number": 16,
+                    "request": {
+                        "hand": [
+                            "9b",
+                            "10s"
+                        ],
+                        "table": [
+                            "9d",
+                            "4c",
+                            "3d"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b",
+                            "3d",
+                            "10b",
+                            "9b",
+                            "10s",
+                            "2c",
+                            "2b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 32,
+                    "decision": {
+                        "card_played": "9b",
+                        "is_capture": true,
+                        "description": "Gioca CB \u2192 prende [CD]"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 33
+                },
+                {
+                    "timestamp": 1768329097.899722,
+                    "move_number": 17,
+                    "request": {
+                        "hand": [
+                            "10s"
+                        ],
+                        "table": [
+                            "4c",
+                            "3d",
+                            "8s"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b",
+                            "3d",
+                            "10b",
+                            "9b",
+                            "10s",
+                            "2c",
+                            "2b",
+                            "8s"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 33,
+                    "decision": {
+                        "card_played": "10s",
+                        "is_capture": false,
+                        "description": "Gioca RS \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 1,
+                    "memory_after": 34
+                },
+                {
+                    "timestamp": 1768329105.0250728,
+                    "move_number": 18,
+                    "request": {
+                        "hand": [
+                            "7c",
+                            "5c",
+                            "9s"
+                        ],
+                        "table": [
+                            "4c",
+                            "8s",
+                            "10s"
+                        ],
+                        "seen_history": [
+                            "1s",
+                            "4b",
+                            "3s",
+                            "8b",
+                            "2d",
+                            "4d",
+                            "5d",
+                            "3c",
+                            "10c",
+                            "1c",
+                            "6c",
+                            "1d",
+                            "5s",
+                            "6b",
+                            "9d",
+                            "10d",
+                            "7s",
+                            "6d",
+                            "4s",
+                            "6s",
+                            "2s",
+                            "5b",
+                            "8c",
+                            "7b",
+                            "7d",
+                            "4c",
+                            "1b",
+                            "3d",
+                            "10b",
+                            "9b",
+                            "10s",
+                            "2c",
+                            "2b",
+                            "8s",
+                            "7c",
+                            "5c",
+                            "9s",
+                            "3b"
+                        ],
+                        "my_score_cards": 0,
+                        "opp_score_cards": 0
+                    },
+                    "memory_before": 34,
+                    "decision": {
+                        "card_played": "9s",
+                        "is_capture": false,
+                        "description": "Gioca CS \u2192 scarta"
+                    },
+                    "error": null,
+                    "newly_seen": 4,
+                    "memory_after": 38
+                }
+            ],
+            "total_moves": 18,
+            "final_memory": 38
+        }
+    ]
+}

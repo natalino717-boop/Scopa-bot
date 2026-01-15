@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopa Bot Test Arena</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card {
+            width: 80px;
+            height: 120px;
+            background: white;
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: gold;
+        }
+
+        .card.selected {
+            border-color: #4CAF50;
+            box-shadow: 0 0 10px #4CAF50;
+            background-color: #e8f5e9;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        /* Specific card styles for visual debug */
+        .card[data-card="7d"] {
+            color: gold;
+            background: #550;
+        }
+
+        /* Settebello */
+    </style>
+</head>
+
+<body>
+
+    <h1>🤖 Scopa Bot Test Arena</h1>
+    <p>Open this page, click the Extension Icon, and hit "Gioca Mossa".</p>
+
+    <div class="game-area">
+        <!-- Table -->
+        <div class="section">
+            <h2>Tavolo</h2>
+            <div id="table" class="cards">
+                <div class="card" data-card="7b">7 Bastoni</div>
+                <div class="card" data-card="3c">3 Coppe</div>
+                <div class="card" data-card="5s">5 Spade</div>
+            </div>
+        </div>
+
+        <!-- My Hand -->
+        <div class="section">
+            <h2>La Tua Mano</h2>
+            <div id="my-hand" class="cards">
+                <div class="card" data-card="1b">Asso Bastoni</div>
+                <div class="card" data-card="7d">7 Denari</div>
+                <div class="card" data-card="2c">2 Coppe</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple click feedback
+        document.querySelectorAll('.card').forEach(c => {
+            c.addEventListener('click', () => {
+                console.log("Card clicked manually:", c.getAttribute('data-card'));
+                c.classList.toggle('selected');
+
+                // If it's the bot, we might want to alert
+                if (event.isTrusted === false) {
+                    alert("🤖 BOT CLICKED: " + c.getAttribute('data-card'));
+                    c.style.backgroundColor = "cyan";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
