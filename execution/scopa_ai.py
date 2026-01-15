@@ -1140,6 +1140,41 @@ class ScopaBot:
                 print(f"[AI] Inference Error: {e}")
                 
         self.memory.update(state, my_player)
+    
+    def _lookahead_penalty(self, state: GameState, move: Move) -> int:
+        """Valuta la risposta dell'avversario (1-ply lookahead).
+        
+        Come Pro/HumanPro: penalizza mosse che danno buone opzioni all'avversario.
+        """
+        from scopa_core import apply_move
+        
+        next_state = apply_move(state, move)
+        
+        # Se avversario non ha carte, nessuna penalità
+        if not next_state.current.hand:
+            return 0
+        
+        opp_moves = get_valid_moves(next_state)
+        if not opp_moves:
+            return 0
+        
+        # Trova miglior score avversario (euristica semplificata)
+        best_opp = 0
+        for m in opp_moves:
+            opp_score = 0
+            if m.is_capture:
+                opp_score += 15
+                if any(c.is_settebello for c in m.cards_captured):
+                    opp_score += 280
+                if m.is_scopa:
+                    opp_score += 120
+                opp_score += sum(26 for c in m.cards_captured if c.is_denaro)
+                opp_score += sum(22 for c in m.cards_captured if c.value == 7)
+                opp_score += len(m.cards_captured) * 9
+            best_opp = max(best_opp, opp_score)
+        
+        # Penalizza se avversario ha buone opzioni (-22% del suo miglior score)
+        return -int(best_opp * 0.22)
 
     def choose_move(self, 
                    state: GameState, 
@@ -1195,6 +1230,9 @@ class ScopaBot:
         scored = []
         for move in moves:
             score, reasons = score_move(state, move, self.memory, adv, style, phase, match_score, dealer)
+            # v12.21: Aggiunge lookahead penalty (come Pro/HumanPro)
+            lookahead = self._lookahead_penalty(state, move)
+            score += lookahead
             scored.append((score, move, reasons))
         
         # Sort scores
