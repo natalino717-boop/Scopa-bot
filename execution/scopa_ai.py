@@ -408,7 +408,8 @@ def score_move(
     # v12.13: PENALIZE capturing with NON-denari when denari alternative exists
     if move.is_capture and not card.is_denaro:
         my_hand = state.players[state.current_player].hand
-        denari_same_value = [c for c in my_hand if c.is_denaro and c.value == card.value]
+        # v12.20 FIX: Exclude settebello - we WANT to protect it, not use it for captures!
+        denari_same_value = [c for c in my_hand if c.is_denaro and c.value == card.value and not c.is_settebello]
         
         if denari_same_value:
             # We have a denari of same value! Heavy penalty for not using it
