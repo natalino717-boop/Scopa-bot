@@ -604,6 +604,34 @@ def score_move(
         # Apply Match Context
         risk_multiplier *= risk_factor
         
+        # === v12.24: USE IMPOSSIBLE_CARDS TO REDUCE SCOPA RISK ===
+        # If we KNOW opponent can't have the "fatal" card, reduce/eliminate risk
+        # CONSERVATIVE: Only significantly reduce risk with 3+ impossible cards
+        if scopa_prob > 0 and memory and hasattr(memory, 'impossible_cards'):
+            table_sum = sum(c.value for c in new_table)
+            # Fatal card = card that could capture the table
+            if len(new_table) == 1:
+                fatal_value = new_table[0].value  # Direct capture
+            else:
+                fatal_value = table_sum  # Sum capture (if <= 10)
+            
+            if fatal_value <= 10:
+                # Count how many cards of fatal value are IMPOSSIBLE for opponent
+                impossible_fatal = sum(1 for c in memory.impossible_cards 
+                                      if c.value == fatal_value)
+                
+                # CONSERVATIVE thresholds:
+                if impossible_fatal >= 3:
+                    # 3+ impossible = very low risk (but not zero - inference could be wrong)
+                    scopa_prob *= 0.2
+                    reasons.append(f"SAFE! ({impossible_fatal} {fatal_value}s impossible)")
+                elif impossible_fatal >= 2:
+                    # 2 impossible = modest risk reduction
+                    scopa_prob *= 0.5
+                    reasons.append(f"low risk ({impossible_fatal} {fatal_value}s impossible)")
+                # 1 impossible = no reduction (too uncertain)
+
+        
         # Penalità base per probabilità scopa
         # v12.10: PARANOID SCOPA RISK (User Request: "Don't risk Scopa for small gains")
         if scopa_prob > 0.5:
@@ -645,6 +673,7 @@ def score_move(
             penalty = 0
             
         score -= int(penalty * risk_multiplier)
+
         
         # === SOMMA BASSA (v12.18 - INCREASED PENALTIES) ===
         # Leaving low sums is risky - opponent can easily capture!
