@@ -2,6 +2,21 @@
 // CAMBIA QUESTO IP con quello del computer che fa da server
 const SERVER_IP = "192.168.0.138"; // <-- IP del Mac con il server
 
+// Retry with Exponential Backoff
+async function fetchWithRetry(url, options, maxRetries = 3) {
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+        try {
+            const res = await fetch(url, options);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        } catch (err) {
+            if (attempt === maxRetries - 1) throw err;
+            // Exponential backoff: 1s, 2s, 4s
+            await new Promise(r => setTimeout(r, Math.pow(2, attempt) * 1000));
+        }
+    }
+}
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     const endpoints = {
@@ -27,10 +42,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             options.body = JSON.stringify(request.state);
         }
 
-        fetch(url, options)
-            .then(res => res.json())
-            .then(data => sendResponse({ status: "success", data: data }))
-            .catch(err => sendResponse({ status: "error", message: err.toString() }));
+        // Use retry logic for FETCH_MOVE (critical), simple fetch for others
+        if (request.action === "FETCH_MOVE") {
+            fetchWithRetry(url, options)
+                .then(data => sendResponse({ status: "success", data: data }))
+                .catch(err => sendResponse({ status: "error", message: err.toString() }));
+        } else {
+            fetch(url, options)
+                .then(res => res.json())
+                .then(data => sendResponse({ status: "success", data: data }))
+                .catch(err => sendResponse({ status: "error", message: err.toString() }));
+        }
 
         return true;
     }

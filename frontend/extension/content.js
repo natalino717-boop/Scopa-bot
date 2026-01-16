@@ -107,7 +107,21 @@ function startObserver() {
 startObserver();
 
 // ==================== GAME SCANNER ====================
+let scanLock = false;  // Mutex to prevent race conditions
+
 function scanGame() {
+    // Prevent concurrent scans (race condition fix)
+    if (scanLock) return;
+    scanLock = true;
+
+    try {
+        scanGameInternal();
+    } finally {
+        scanLock = false;
+    }
+}
+
+function scanGameInternal() {
     const hand = [];
     const table = [];
     const viewportHeight = window.innerHeight;  // FIX 3: Use viewport percentages
@@ -325,7 +339,6 @@ function createHUD() {
             <span>🤖 SCOPABOT [STEALTH]</span>
             <button id="hud-close" style="background:none; border:none; color:#f00; font-size:16px; cursor:pointer; padding:0 5px;">✕</button>
         </div>
-        <div style="font-size:10px; color:#888; margin-bottom:5px;">Press ${STEALTH.toggleKey} to toggle</div>
         <div>✋ Hand: <span id="hud-hand" style="color:white">--</span></div>
         <div>🟩 Table: <span id="hud-table" style="color:white">--</span></div>
         <div>🧠 Memory: <span id="hud-mem" style="color:yellow">--/40</span></div>
@@ -401,17 +414,7 @@ function createHUD() {
     if (sidEl) sidEl.innerText = sessionId.substr(-4);
 }
 
-// STEALTH: Keyboard toggle for HUD
-document.addEventListener('keydown', (e) => {
-    if (e.key === STEALTH.toggleKey) {
-        e.preventDefault();
-        STEALTH.hudVisible = !STEALTH.hudVisible;
-        if (hudElement) {
-            hudElement.style.display = STEALTH.hudVisible ? 'block' : 'none';
-        }
-        log('HUD toggled:', STEALTH.hudVisible);
-    }
-});
+// STEALTH: Keyboard toggle removed - HUD stays fixed
 
 function updateHUD() {
     if (!hudElement) createHUD();
@@ -819,4 +822,4 @@ const memInterval = setInterval(() => {
 }, 1500);
 
 // Log stealth mode active (only if logs enabled)
-log('STEALTH MODE ACTIVE - Press', STEALTH.toggleKey, 'to toggle HUD');
+log('STEALTH MODE ACTIVE - HUD always visible');
