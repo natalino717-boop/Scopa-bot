@@ -47,10 +47,16 @@ class CardMemory:
         1. L'avversario ha scartato una carta di BASSO valore (1-4)
         2. Sul tavolo c'era un 7 o un denaro prezioso che poteva prendere
 
-        Questo riduce i falsi positivi dell'inferenza aggressiva.
+        Limiti di sicurezza:
+        - Max 8 carte impossibili per evitare contamination
         """
+        MAX_IMPOSSIBLE = 8  # Limite per evitare inference explosion
+
+        # Se già al limite, non aggiungere altre
+        if len(self.impossible_cards) >= MAX_IMPOSSIBLE:
+            return
+
         # Solo inferire se avversario ha scartato carta di basso valore
-        # Se ha scartato un 7 o un denaro, probabilmente aveva una ragione strategica
         if played_card.value >= 5 or played_card.is_denaro:
             return  # Non inferire - scarto potrebbe essere strategico
 
@@ -62,12 +68,13 @@ class CardMemory:
         possible_opp = self.possible_opponent_cards()
 
         for table_card in high_value_on_table:
-            # Se c'era un 7 o denaro sul tavolo e l'avversario ha scartato carta bassa,
-            # probabilmente non aveva la carta per prenderlo
+            if len(self.impossible_cards) >= MAX_IMPOSSIBLE:
+                break  # Raggiunto limite
             for card in possible_opp:
                 if card.value == table_card.value:
                     self.impossible_cards.add(card)
-                    print(f"[AI-INFERENCE] Conservative: opp missed {table_card}, deduced no {card}.")
+                    if len(self.impossible_cards) >= MAX_IMPOSSIBLE:
+                        break
 
     def update(self, state: GameState, my_player: int):
         self.seen.update(state.players[my_player].hand)
@@ -90,8 +97,19 @@ class CardMemory:
         return set(create_deck()) - self.seen
         
     def possible_opponent_cards(self) -> Set[Card]:
-        """Carte che l'avversario POTREBBE avere (ignora impossibili)."""
-        return self.unseen_cards() - self.impossible_cards
+        """Carte che l'avversario POTREBBE avere (ignora impossibili).
+
+        Safety: Se risulta vuoto ma ci sono unseen, resetta inference (probabilmente contaminata).
+        """
+        unseen = self.unseen_cards()
+        possible = unseen - self.impossible_cards
+
+        # Safety check: se possible è vuoto ma unseen non lo è, inference è contaminata
+        if not possible and unseen:
+            self.impossible_cards.clear()  # Reset inference
+            return unseen
+
+        return possible
     
     def get_safe_discards(self, my_hand: List[Card], table: List[Card]) -> Set[Card]:
         """
@@ -625,7 +643,10 @@ def score_move(
         
         # Apply Match Context
         risk_multiplier *= risk_factor
-        
+
+        # CAP: Evita valori estremi (min 0.5, max 2.0)
+        risk_multiplier = max(0.5, min(2.0, risk_multiplier))
+
         # === v12.24: USE IMPOSSIBLE_CARDS TO REDUCE SCOPA RISK ===
         # If we KNOW opponent can't have the "fatal" card, reduce/eliminate risk
         # CONSERVATIVE: Only significantly reduce risk with 3+ impossible cards
@@ -1210,13 +1231,14 @@ class ScopaBot:
         """
         from scopa_core import apply_move
 
-        # Costanti lookahead (v12.29 validated - 59% WR)
-        LOOKAHEAD_BASE_CAPTURE = 15
-        LOOKAHEAD_SETTEBELLO = 320    # ~P.MAX * 0.64 - catturare settebello è critico
-        LOOKAHEAD_SCOPA = 220         # ~P.MAX * 0.44 - scopa vale 1 punto
-        LOOKAHEAD_DENARO = 28         # denari per punto denari
-        LOOKAHEAD_SEVEN = 24          # 7 per primiera
-        LOOKAHEAD_CARD = 10           # carta generica per punto carte
+        # Costanti lookahead - ALLINEATE con P constants per coerenza
+        # Usano P.* direttamente così rimangono sincronizzate
+        LOOKAHEAD_BASE_CAPTURE = int(P.MEDIUM)       # 38 - cattura base
+        LOOKAHEAD_SETTEBELLO = int(P.MAX)            # 500 - settebello è critico
+        LOOKAHEAD_SCOPA = int(P.SCOPA_BONUS)         # 436 - scopa vale 1 punto
+        LOOKAHEAD_DENARO = int(P.LOW * 2)            # 32 - denari per punto denari
+        LOOKAHEAD_SEVEN = int(P.HIGH // 2)           # 32 - 7 per primiera
+        LOOKAHEAD_CARD = int(P.MINIMAL * 2)          # 12 - carta generica
 
         # Moltiplicatori penalità (quanto del best_opp diventa penalty)
         PENALTY_SETTEBELLO = 0.55     # Se avversario può prendere settebello
@@ -1299,10 +1321,14 @@ class ScopaBot:
 
         # === PROTEZIONE SETTEBELLO (bypassa lookahead) ===
         # Se possiamo prendere il settebello, lo prendiamo SEMPRE
+        # Se più modi di prenderlo, preferisci quello che cattura MENO carte (meno rischio scopa dopo)
         captures = [m for m in moves if m.is_capture]
-        for cap in captures:
-            if any(c.is_settebello for c in cap.cards_captured):
-                return cap
+        settebello_captures = [cap for cap in captures
+                               if any(c.is_settebello for c in cap.cards_captured)]
+        if settebello_captures:
+            # Ordina per numero di carte catturate (meno = meglio)
+            settebello_captures.sort(key=lambda m: len(m.cards_captured))
+            return settebello_captures[0]
                 
         # ... logica continua chiamando score_move ...
         # Poiché score_move è una funzione standalone (o metodo statico),
