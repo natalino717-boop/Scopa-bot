@@ -28,7 +28,7 @@ def analyze_score_trend(filename):
             try:
                 cur_my = req.get('my_score_match', 0)
                 cur_opp = req.get('opp_score_match', 0)
-            except:
+            except Exception:
                 cur_my, cur_opp = 0, 0
             
             event = ""

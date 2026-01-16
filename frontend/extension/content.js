@@ -194,7 +194,15 @@ function inferStateChanges(newHand, newTable) {
                 // OPPONENT CAPTURE
                 // The appeared card is what opponent played (if visible)
                 // The disappeared cards are what was captured
-                const oppCard = appearedCards.length === 1 ? appearedCards[0] : "unknown";
+                let oppCard = "unknown";
+                if (appearedCards.length === 1) {
+                    oppCard = appearedCards[0];
+                } else if (appearedCards.length === 0 && disappearedCards.length > 0) {
+                    // SCOPA case: opponent card was played and immediately captured
+                    // We can't know which card they played, but we know the captured cards
+                    // Log this for debugging
+                    log('[OPP MOVE] Scopa detected - opponent card unknown');
+                }
                 const captured = disappearedCards;
 
                 // Store opponent move details for the bot

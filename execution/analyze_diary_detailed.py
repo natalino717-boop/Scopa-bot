@@ -19,7 +19,7 @@ def analyze_diary(filename):
             try:
                 my_s = req.get('my_score_match', 0)
                 opp_s = req.get('opp_score_match', 0)
-            except:
+            except Exception:
                 my_s, opp_s = 0, 0
                 
             print(f"=== TURN {i+1} ===")

@@ -9,6 +9,8 @@ import json
 import time
 import os
 import asyncio
+import threading
+import random
 from datetime import datetime, timedelta
 
 # Import internal logic
@@ -33,6 +35,9 @@ app.add_middleware(
 DIARY_DIR = "game_diaries"
 DIARY_INDEX = "game_diary.json"  # Keep for backward compatibility
 
+# Thread lock for file I/O operations (fix race condition)
+_file_io_lock = threading.Lock()
+
 def ensure_diary_dir():
     """Ensure diary directory exists."""
     if not os.path.exists(DIARY_DIR):
@@ -44,10 +49,11 @@ def get_current_game_path(game_id):
     return os.path.join(DIARY_DIR, f"game_{game_id}.json")
 
 def save_game_realtime(game_id, game_data):
-    """Save game data immediately (called after each move)."""
+    """Save game data immediately (called after each move). Thread-safe."""
     filepath = get_current_game_path(game_id)
-    with open(filepath, "w") as f:
-        json.dump(game_data, f, indent=2)
+    with _file_io_lock:
+        with open(filepath, "w") as f:
+            json.dump(game_data, f, indent=2)
     logger.info(f"Game {game_id} saved to {filepath}")
 
 def load_diary():
@@ -62,8 +68,8 @@ def load_diary():
                 with open(os.path.join(DIARY_DIR, filename), "r") as f:
                     game_data = json.load(f)
                     games.append(game_data)
-            except:
-                pass
+            except (json.JSONDecodeError, IOError, OSError) as e:
+                logger.warning(f"Failed to load {filename}: {e}")
     
     # Also load from old monolithic file if exists
     if os.path.exists(DIARY_INDEX):
@@ -75,8 +81,8 @@ def load_diary():
                 for g in old_diary.get("games", []):
                     if g.get("game_id") not in old_ids:
                         games.append(g)
-        except:
-            pass
+        except (json.JSONDecodeError, IOError, OSError) as e:
+            logger.warning(f"Failed to load old diary index: {e}")
     
     return {"games": games}
 
@@ -156,7 +162,9 @@ sessions: Dict[str, GameSession] = {}
 def get_session(session_id: str) -> GameSession:
     """Retrieve or create a session for the given ID."""
     if not session_id:
-        return None # Should handle default/legacy case?
+        # Use default session for legacy/empty session_id
+        session_id = "default"
+        logger.warning("Empty session_id provided, using 'default'")
 
     if session_id not in sessions:
         logger.info(f"Creating NEW session for ID: {session_id}")
@@ -173,23 +181,40 @@ async def cleanup_old_sessions():
     while True:
         try:
             now = datetime.now()
-            expired = [sid for sid, s in sessions.items()
+            # Create a snapshot of session IDs to avoid race conditions
+            session_snapshot = list(sessions.items())
+            expired = [sid for sid, s in session_snapshot
                        if now - s.last_activity > SESSION_TIMEOUT]
+
+            removed_count = 0
             for sid in expired:
+                # Verify session still exists before accessing (race condition fix)
+                if sid not in sessions:
+                    continue
+
+                session = sessions.get(sid)
+                if session is None:
+                    continue
+
                 # Save game to diary before removing session
-                if sessions[sid].move_history:
+                if session.move_history:
                     save_to_diary({
-                        "game_id": sessions[sid].game_id,
+                        "game_id": session.game_id,
                         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
-                        "moves": sessions[sid].move_history,
-                        "total_moves": len(sessions[sid].move_history),
-                        "final_memory": len(sessions[sid].seen_cards),
+                        "moves": session.move_history,
+                        "total_moves": len(session.move_history),
+                        "final_memory": len(session.seen_cards),
                         "cleanup_reason": "session_timeout"
                     })
-                del sessions[sid]
-                logger.info(f"Cleaned up expired session: {sid}")
-            if expired:
-                logger.info(f"Session cleanup: removed {len(expired)} expired sessions, {len(sessions)} active")
+
+                # Safe deletion with existence check
+                if sid in sessions:
+                    del sessions[sid]
+                    removed_count += 1
+                    logger.info(f"Cleaned up expired session: {sid}")
+
+            if removed_count > 0:
+                logger.info(f"Session cleanup: removed {removed_count} expired sessions, {len(sessions)} active")
         except Exception as e:
             logger.error(f"Session cleanup error: {e}")
         await asyncio.sleep(300)  # Run every 5 minutes
@@ -455,15 +480,17 @@ def get_next_move(req: GameStateRequest):
                             if opp_card not in current_session.opp_captures:
                                 current_session.opp_captures.append(opp_card)
                                 logger.info(f"FIX1: Added opponent's played card: {opp_card}")
-                        except:
-                            pass
-                
+                        except ValueError as e:
+                            logger.debug(f"Failed to parse opponent card: {e}")
+
                 # Check for SCOPA by Opponent
                 # If table is empty now, but wasn't before
                 if not table_cards and current_session.last_table_state:
-                     # Check if 'scopa' mentioned in last action description
-                     if "scopa" in req.last_action_desc.lower() or "capture" in req.last_action_desc.lower():
-                         # Heuristic: likely a scopa if table cleared
+                     # Only count as scopa if explicitly marked OR via wasScopa flag
+                     is_scopa = "scopa" in req.last_action_desc.lower()
+                     if req.opponent_last_move and req.opponent_last_move.get('wasScopa'):
+                         is_scopa = True
+                     if is_scopa:
                          current_session.opp_scope += 1
                          logger.info("Infer Opponent SCOPA!")
         
@@ -475,6 +502,7 @@ def get_next_move(req: GameStateRequest):
         all_cards = set(create_deck())
         seen_set = current_session.seen_cards | set(hand_cards) | set(table_cards)
         unseen_cards = list(all_cards - seen_set)
+        random.shuffle(unseen_cards)  # Shuffle for unbiased MC simulations
         mock_deck = unseen_cards  # Use real unseen cards
         
         state = GameState(

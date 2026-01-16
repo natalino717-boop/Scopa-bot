@@ -96,7 +96,7 @@ def simulate_game_with_config(config1: WeightConfig, config2: WeightConfig) -> T
     try:
         s0, s1 = calculate_scores(state)
         return s0.total, s1.total
-    except:
+    except Exception:
         return 0, 0
 
 

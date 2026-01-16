@@ -271,27 +271,33 @@ def deal_cards(state: GameState, cards_per_player: int = 3) -> GameState:
     return new_state
 
 
-def initialize_game(shuffle: bool = True) -> GameState:
+def initialize_game(shuffle: bool = True, _retry_count: int = 0) -> GameState:
     """
     Inizializza una nuova partita.
     """
+    MAX_RETRIES = 10  # Prevent infinite recursion
+
     deck = create_deck()
     if shuffle:
         random.shuffle(deck)
-    
+
     state = GameState(deck=deck)
-    
+
     # Metti 4 carte sul tavolo
     state.table = [state.deck.pop() for _ in range(4)]
-    
+
     # Controlla regola: se ci sono 3+ Re, rimescola
     kings = sum(1 for c in state.table if c.value == 10)
     if kings >= 3:
-        return initialize_game(shuffle=True)
-    
+        if _retry_count >= MAX_RETRIES:
+            # Accept the hand anyway after max retries (extremely rare)
+            pass
+        else:
+            return initialize_game(shuffle=True, _retry_count=_retry_count + 1)
+
     # Distribuisci 3 carte a testa
     state = deal_cards(state, 3)
-    
+
     return state
 
 
@@ -339,47 +345,56 @@ def calculate_primiera(captured: List[Card]) -> int:
 def calculate_scores(state: GameState) -> Tuple[Score, Score]:
     """
     Calcola i punteggi finali per entrambi i giocatori.
+    Note: This function is read-only and does not mutate the original state.
     """
+    # Create copies to avoid mutating original state
+    p0_captured = state.players[0].captured.copy()
+    p1_captured = state.players[1].captured.copy()
+    remaining_table = state.table.copy()
+
     # Assegna carte rimaste sul tavolo all'ultimo che ha catturato
-    if state.last_capturer is not None and state.table:
-        state.players[state.last_capturer].captured.extend(state.table)
-        state.table.clear()
+    if state.last_capturer is not None and remaining_table:
+        if state.last_capturer == 0:
+            p0_captured.extend(remaining_table)
+        else:
+            p1_captured.extend(remaining_table)
+        remaining_table.clear()
     
     p0, p1 = state.players
     s0, s1 = Score(), Score()
-    
+
     # Scope
     s0.scope = p0.scope
     s1.scope = p1.scope
-    
-    # Carte
-    c0, c1 = len(p0.captured), len(p1.captured)
+
+    # Carte (use copies that include remaining table cards)
+    c0, c1 = len(p0_captured), len(p1_captured)
     if c0 > c1:
         s0.cards = 1
     elif c1 > c0:
         s1.cards = 1
-    
-    # Denari
-    d0 = sum(1 for c in p0.captured if c.is_denaro)
-    d1 = sum(1 for c in p1.captured if c.is_denaro)
+
+    # Denari (use copies)
+    d0 = sum(1 for c in p0_captured if c.is_denaro)
+    d1 = sum(1 for c in p1_captured if c.is_denaro)
     if d0 > d1:
         s0.denari = 1
     elif d1 > d0:
         s1.denari = 1
-    
-    # Settebello
-    for c in p0.captured:
+
+    # Settebello (use copies)
+    for c in p0_captured:
         if c.is_settebello:
             s0.settebello = 1
             break
-    for c in p1.captured:
+    for c in p1_captured:
         if c.is_settebello:
             s1.settebello = 1
             break
-    
-    # Primiera
-    pr0 = calculate_primiera(p0.captured)
-    pr1 = calculate_primiera(p1.captured)
+
+    # Primiera (use copies)
+    pr0 = calculate_primiera(p0_captured)
+    pr1 = calculate_primiera(p1_captured)
     if pr0 > pr1:
         s0.primiera = 1
     elif pr1 > pr0:

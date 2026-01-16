@@ -1241,8 +1241,9 @@ class ScopaBot:
         LOOKAHEAD_CARD = int(P.MINIMAL * 2)          # 12 - carta generica
 
         # Moltiplicatori penalità (quanto del best_opp diventa penalty)
-        PENALTY_SETTEBELLO = 0.55     # Se avversario può prendere settebello
-        PENALTY_SCOPA = 0.45          # Se avversario può fare scopa
+        # Note: SCOPA > SETTEBELLO perché scopa = 1 punto certo, settebello = 1 punto ma spesso già in vantaggio
+        PENALTY_SCOPA = 0.55          # Se avversario può fare scopa (highest priority)
+        PENALTY_SETTEBELLO = 0.50     # Se avversario può prendere settebello
         PENALTY_NORMAL = 0.28         # Cattura normale
 
         next_state = apply_move(state, move)
@@ -1321,14 +1322,45 @@ class ScopaBot:
 
         # === PROTEZIONE SETTEBELLO (bypassa lookahead) ===
         # Se possiamo prendere il settebello, lo prendiamo SEMPRE
-        # Se più modi di prenderlo, preferisci quello che cattura MENO carte (meno rischio scopa dopo)
+        # Se più modi di prenderlo, valuta scopa risk dopo la mossa
         captures = [m for m in moves if m.is_capture]
         settebello_captures = [cap for cap in captures
                                if any(c.is_settebello for c in cap.cards_captured)]
         if settebello_captures:
-            # Ordina per numero di carte catturate (meno = meglio)
-            settebello_captures.sort(key=lambda m: len(m.cards_captured))
-            return settebello_captures[0]
+            if len(settebello_captures) == 1:
+                return settebello_captures[0]
+
+            # Multiple ways to capture settebello - evaluate which leaves safest table
+            best_capture = settebello_captures[0]
+            best_risk_score = float('inf')
+
+            for cap in settebello_captures:
+                # Calculate table after this capture
+                new_table = [c for c in state.table if c not in cap.cards_captured]
+                if not new_table:
+                    # SCOPA! Best possible outcome
+                    return cap
+
+                # Calculate scopa risk for opponent
+                table_sum = sum(c.value for c in new_table)
+                risk_score = 0
+
+                # Single card = higher risk (direct match possible)
+                if len(new_table) == 1:
+                    risk_score += 100
+
+                # Low sum = scopa risk
+                if table_sum <= 10:
+                    risk_score += (11 - table_sum) * 10  # Lower sum = higher risk
+
+                # Prefer captures that leave more cards (harder to scopa)
+                risk_score -= len(new_table) * 5
+
+                if risk_score < best_risk_score:
+                    best_risk_score = risk_score
+                    best_capture = cap
+
+            return best_capture
                 
         # ... logica continua chiamando score_move ...
         # Poiché score_move è una funzione standalone (o metodo statico),

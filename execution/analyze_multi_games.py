@@ -10,7 +10,7 @@ def parse_card_safe(code):
         suit_char = code[-1].lower()
         suits = {'b': Suit.BASTONI, 'c': Suit.COPPE, 'd': Suit.DENARI, 's': Suit.SPADE}
         return Card(suits[suit_char], val)
-    except:
+    except Exception:
         return None
 
 def analyze_endgames(filename):

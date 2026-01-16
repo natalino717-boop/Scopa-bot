@@ -68,7 +68,7 @@ def train():
         print(f"Loading checkpoint: {CHECKPOINT_PATH}")
         try:
             agent.load(CHECKPOINT_PATH)
-        except:
+        except Exception:
             print("Failed to load checkpoint, starting fresh.")
     
     start_eps = agent.steps_done
