@@ -200,8 +200,22 @@ def parse_card(code: str) -> Card:
     if len(code) < 2: raise ValueError(f"Invalid card code: {code}")
     s_char = code[-1]
     val_str = code[:-1]
-    try: val = int(val_str)
-    except: val = 0
+
+    # Handle face cards and ace
+    if val_str == 'a':
+        val = 1
+    elif val_str == 'j':
+        val = 8
+    elif val_str == 'q':
+        val = 9
+    elif val_str == 'k':
+        val = 10
+    else:
+        try:
+            val = int(val_str)
+        except ValueError:
+            raise ValueError(f"Invalid card value: {val_str}")
+
     if s_char == 'd': suit = Suit.DENARI
     elif s_char == 'c': suit = Suit.COPPE
     elif s_char == 's': suit = Suit.SPADE
