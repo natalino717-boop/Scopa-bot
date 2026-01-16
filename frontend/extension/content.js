@@ -110,6 +110,8 @@ startObserver();
 function scanGame() {
     const hand = [];
     const table = [];
+    const viewportHeight = window.innerHeight;  // FIX 3: Use viewport percentages
+
     document.querySelectorAll('div[id^="carta_mazzo_"]').forEach(div => {
         const topVal = parseInt((div.style.top || "").replace("px", ""));
         if (isNaN(topVal)) return;
@@ -130,9 +132,14 @@ function scanGame() {
             div.style.border = "";
         }
 
-        if (topVal > 450) hand.push(code);
-        else if (topVal > 200 && topVal < 400) table.push(code);
+        // FIX 3: Use viewport percentage thresholds instead of fixed pixels
+        // This works across different screen resolutions
+        const topPercent = (topVal / viewportHeight) * 100;
+
+        if (topPercent > 60) hand.push(code);           // Bottom 40% = hand
+        else if (topPercent > 30 && topPercent < 55) table.push(code);  // Middle area = table
     });
+
 
     if (previousHand.length > 0 || previousTable.length > 0) {
         inferStateChanges(hand, table);

@@ -10,7 +10,7 @@ import time
 import os
 
 # Import internal logic
-from scopa_core import GameState, PlayerState, Card, Suit, calculate_scores, Score
+from scopa_core import GameState, PlayerState, Card, Suit, calculate_scores, Score, create_deck
 from scopa_ai import ScopaBot
 
 # Configure Logging
@@ -427,6 +427,18 @@ def get_next_move(req: GameStateRequest):
                 current_session.opp_captures.extend(missing_from_table)
                 logger.info(f"Infer Opponent Capture: {missing_from_table}")
                 
+                # FIX 1: Also track opponent's played card from DOM tracking
+                if req.opponent_last_move and req.opponent_last_move.get('type') == 'capture':
+                    opp_card_code = req.opponent_last_move.get('cardPlayed')
+                    if opp_card_code and opp_card_code != 'unknown':
+                        try:
+                            opp_card = parse_card(opp_card_code)
+                            if opp_card not in current_session.opp_captures:
+                                current_session.opp_captures.append(opp_card)
+                                logger.info(f"FIX1: Added opponent's played card: {opp_card}")
+                        except:
+                            pass
+                
                 # Check for SCOPA by Opponent
                 # If table is empty now, but wasn't before
                 if not table_cards and current_session.last_table_state:
@@ -443,8 +455,11 @@ def get_next_move(req: GameStateRequest):
         dummy_player = PlayerState(hand=hand_cards)
         dummy_opp = PlayerState(hand=[]) 
         
-        missing_count = 40 - len(current_session.seen_cards)
-        mock_deck = [Card(Suit.DENARI, 1)] * missing_count 
+        # FIX 2: Use actual unseen cards instead of repeating same card
+        all_cards = set(create_deck())
+        seen_set = current_session.seen_cards | set(hand_cards) | set(table_cards)
+        unseen_cards = list(all_cards - seen_set)
+        mock_deck = unseen_cards  # Use real unseen cards
         
         state = GameState(
             table=table_cards,
