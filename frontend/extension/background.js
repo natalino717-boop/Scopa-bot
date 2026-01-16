@@ -1,6 +1,26 @@
 // Proxy Server for Mixed Content (HTTPS -> HTTP)
-// CAMBIA QUESTO IP con quello del computer che fa da server
-const SERVER_IP = "192.168.0.138"; // <-- IP del Mac con il server
+// Server IP configuration - can be changed via chrome.storage.local
+// To change: chrome.storage.local.set({serverIP: "192.168.x.x"})
+const DEFAULT_SERVER_IP = "192.168.0.138";
+let SERVER_IP = DEFAULT_SERVER_IP;
+
+// Load server IP from storage (if configured)
+chrome.storage.local.get(['serverIP'], (result) => {
+    if (result.serverIP) {
+        SERVER_IP = result.serverIP;
+        console.log('[ScopaBot] Server IP loaded from storage:', SERVER_IP);
+    } else {
+        console.log('[ScopaBot] Using default server IP:', SERVER_IP);
+    }
+});
+
+// Listen for storage changes to update IP dynamically
+chrome.storage.onChanged.addListener((changes, namespace) => {
+    if (namespace === 'local' && changes.serverIP) {
+        SERVER_IP = changes.serverIP.newValue || DEFAULT_SERVER_IP;
+        console.log('[ScopaBot] Server IP updated:', SERVER_IP);
+    }
+});
 
 // Retry with Exponential Backoff
 async function fetchWithRetry(url, options, maxRetries = 3) {

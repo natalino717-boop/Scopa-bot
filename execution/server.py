@@ -23,11 +23,21 @@ logger = logging.getLogger("ScopaServer")
 
 app = FastAPI(title="Scopa Bot API")
 
+# CORS configuration - allow Chrome extensions and local network
+# For Chrome extensions, origin is "chrome-extension://..." which we allow via regex
+ALLOWED_ORIGINS = [
+    "http://localhost",
+    "http://localhost:8000",
+    "http://127.0.0.1",
+    "http://127.0.0.1:8000",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"(chrome-extension://.*|http://192\.168\.\d+\.\d+.*)",  # Chrome extensions + local network
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST"],  # Only methods we actually use
     allow_headers=["*"],
 )
 

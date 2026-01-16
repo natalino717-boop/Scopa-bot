@@ -828,5 +828,13 @@ const memInterval = setInterval(() => {
     });
 }, 1500);
 
+// Cleanup on page unload to prevent memory leaks
+window.addEventListener('beforeunload', () => {
+    clearInterval(initInterval);
+    clearInterval(memInterval);
+    if (observer) observer.disconnect();
+    log('Cleanup: intervals cleared, observer disconnected');
+});
+
 // Log stealth mode active (only if logs enabled)
 log('STEALTH MODE ACTIVE - HUD always visible');
