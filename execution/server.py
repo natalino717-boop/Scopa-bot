@@ -8,6 +8,8 @@ import logging
 import json
 import time
 import os
+import asyncio
+from datetime import datetime, timedelta
 
 # Import internal logic
 from scopa_core import GameState, PlayerState, Card, Suit, calculate_scores, Score, create_deck
@@ -93,15 +95,15 @@ class GameSession:
         self.move_history = []  # Current game log
         self.last_table_count = None
         self.last_table_state: List[Card] = []  # Full table state for tracking changes
-        
+
         # SCORE TRACKING
         self.my_captures: List[Card] = []
         self.opp_captures: List[Card] = []
         self.my_scope: int = 0
         self.opp_scope: int = 0
-        
+
         self.game_id = int(time.time())
-        self.last_reset_time = 0  # Track when last reset happened for cooldown
+        self.last_activity = datetime.now()  # Track last activity for session cleanup
         
     def reset(self):
         global game_counter
@@ -133,33 +135,10 @@ class GameSession:
         logger.info(f"SESSION RESET: New Game ID {self.game_id}")
 
     def update_dead_cards(self, played_card: Card, captured_cards: List[Card]):
-        """Mark cards as 'dead' (removed from play)."""
+        """Mark cards as 'dead' (removed from play). Used for logging."""
         if played_card: self.dead_cards.add(played_card)
         for c in captured_cards:
             self.dead_cards.add(c)
-
-    def check_auto_reset(self, current_visible: List[Card]) -> bool:
-        """
-        Check if multiple visible cards are in 'dead_cards'.
-        Requires 2+ dead cards AND 30s cooldown to avoid spurious resets.
-        """
-        # Cooldown: Don't reset within 30 seconds of last reset
-        MIN_RESET_INTERVAL = 30
-        time_since_reset = time.time() - self.last_reset_time
-        if time_since_reset < MIN_RESET_INTERVAL:
-            return False
-        
-        # Count how many visible cards are "dead"
-        dead_visible = [c for c in current_visible if c in self.dead_cards]
-        
-        # Require at least 2 dead cards to trigger reset (avoids DOM glitches)
-        MIN_DEAD_FOR_RESET = 2
-        if len(dead_visible) >= MIN_DEAD_FOR_RESET:
-            logger.warning(f"AUTO-RESET TRIGGER: Found {len(dead_visible)} dead cards: {dead_visible[:3]}... (Total dead: {len(self.dead_cards)})")
-            self.last_reset_time = time.time()
-            return True
-        
-        return False
 
     def update_memory(self, visible_cards: List[Card]):
         added = []
@@ -178,16 +157,42 @@ def get_session(session_id: str) -> GameSession:
     """Retrieve or create a session for the given ID."""
     if not session_id:
         return None # Should handle default/legacy case?
-        
+
     if session_id not in sessions:
         logger.info(f"Creating NEW session for ID: {session_id}")
         sessions[session_id] = GameSession()
+
+    # Update last activity timestamp
+    sessions[session_id].last_activity = datetime.now()
     return sessions[session_id]
 
-def cleanup_sessions():
-    """Remove old sessions to prevent memory leaks (optional, simple implementation)."""
-    # For now, just keep them. In production, check timestamp.
-    pass
+SESSION_TIMEOUT = timedelta(hours=2)  # Sessions expire after 2 hours of inactivity
+
+async def cleanup_old_sessions():
+    """Background task to remove old sessions and prevent memory leaks."""
+    while True:
+        try:
+            now = datetime.now()
+            expired = [sid for sid, s in sessions.items()
+                       if now - s.last_activity > SESSION_TIMEOUT]
+            for sid in expired:
+                # Save game to diary before removing session
+                if sessions[sid].move_history:
+                    save_to_diary({
+                        "game_id": sessions[sid].game_id,
+                        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+                        "moves": sessions[sid].move_history,
+                        "total_moves": len(sessions[sid].move_history),
+                        "final_memory": len(sessions[sid].seen_cards),
+                        "cleanup_reason": "session_timeout"
+                    })
+                del sessions[sid]
+                logger.info(f"Cleaned up expired session: {sid}")
+            if expired:
+                logger.info(f"Session cleanup: removed {len(expired)} expired sessions, {len(sessions)} active")
+        except Exception as e:
+            logger.error(f"Session cleanup error: {e}")
+        await asyncio.sleep(300)  # Run every 5 minutes
 
 # --- HELPERS ---
 def parse_card(code: str) -> Card:
@@ -448,9 +453,6 @@ def get_next_move(req: GameStateRequest):
                          current_session.opp_scope += 1
                          logger.info("Infer Opponent SCOPA!")
         
-        # DEBUG: Verify bot memory sync
-        eights_in_memory = sum(1 for c in current_session.bot.memory.seen if c.value == 8)
-        logger.info(f"DEBUG: Sess={len(current_session.seen_cards)}, BotMem={len(current_session.bot.memory.seen)}")
         
         dummy_player = PlayerState(hand=hand_cards)
         dummy_opp = PlayerState(hand=[]) 
@@ -494,14 +496,20 @@ def get_next_move(req: GameStateRequest):
         
         # BOT DECISION - Monte Carlo ENABLED for better decisions (v12.1)
         move = current_session.bot.choose_move(
-            state, 
+            state,
             use_monte_carlo=True,  # ENABLED - +10% win rate vs Pro!
             mc_simulations=100,    # 100 sims = optimal (tested: 62.6% vs Pro)
             match_score=(req.my_score_match, req.opp_score_match),
             dealer=req.dealer,
             last_action_desc=req.last_action_desc
         )
-        
+
+        # Log accurato del metodo usato (v12.30)
+        log_entry["actual_scores"] = {
+            "chosen_score": current_session.bot.last_chosen_score,
+            "method": current_session.bot.last_method
+        }
+
         if not move:
             raise HTTPException(status_code=400, detail="No valid moves found")
             
@@ -611,6 +619,13 @@ def get_next_move(req: GameStateRequest):
         })
         
         raise HTTPException(status_code=500, detail=str(e))
+
+# --- STARTUP EVENT: Start background cleanup task ---
+@app.on_event("startup")
+async def startup_event():
+    """Start background tasks when server starts."""
+    asyncio.create_task(cleanup_old_sessions())
+    logger.info("Session cleanup task started (runs every 5 minutes)")
 
 if __name__ == "__main__":
     # 0.0.0.0 = accessible from any device on the network

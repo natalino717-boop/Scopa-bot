@@ -41,18 +41,33 @@ class CardMemory:
         self.impossible_cards.clear()
         
     def infer_from_missed_capture(self, table: List[Card], played_card: Card):
-        """Deduce carte mancanti da scarto."""
-        table_values = {c.value for c in table}
+        """Deduce carte mancanti da scarto - v12.30 CONSERVATIVA.
+
+        Solo inferisce quando:
+        1. L'avversario ha scartato una carta di BASSO valore (1-4)
+        2. Sul tavolo c'era un 7 o un denaro prezioso che poteva prendere
+
+        Questo riduce i falsi positivi dell'inferenza aggressiva.
+        """
+        # Solo inferire se avversario ha scartato carta di basso valore
+        # Se ha scartato un 7 o un denaro, probabilmente aveva una ragione strategica
+        if played_card.value >= 5 or played_card.is_denaro:
+            return  # Non inferire - scarto potrebbe essere strategico
+
+        # Solo inferire per catture di ALTO valore sul tavolo
+        high_value_on_table = [c for c in table if c.value == 7 or c.is_denaro]
+        if not high_value_on_table:
+            return  # Nulla di prezioso sul tavolo, non inferire
+
         possible_opp = self.possible_opponent_cards()
-        
-        for card in possible_opp:
-            # Se la carta mancante avrebbe permesso una presa diretta sul tavolo attuale
-            # E l'avversario ha scartato
-            # Allora probabilmente non ha quella carta.
-            if card.value in table_values:
-                # MARK IMPOSSIBLE
-                self.impossible_cards.add(card)
-                print(f"[AI-INFERENCE] Opponent missed capture on {card.value}. Deduced no {card}.")
+
+        for table_card in high_value_on_table:
+            # Se c'era un 7 o denaro sul tavolo e l'avversario ha scartato carta bassa,
+            # probabilmente non aveva la carta per prenderlo
+            for card in possible_opp:
+                if card.value == table_card.value:
+                    self.impossible_cards.add(card)
+                    print(f"[AI-INFERENCE] Conservative: opp missed {table_card}, deduced no {card}.")
 
     def update(self, state: GameState, my_player: int):
         self.seen.update(state.players[my_player].hand)
@@ -588,18 +603,25 @@ def score_move(
         opp_hand = len(state.opponent.hand)
         scopa_prob = memory.scopa_probability(new_table, opp_hand)
         
-        # ADAPTIVE: quanto pesiamo il rischio?
+        # ADAPTIVE: quanto pesiamo il rischio? v12.30 - LOGICA CORRETTA
+        # Prima considera il vantaggio, poi lo style come modificatore
         adv = advantage.get("advantage", 0)
+
+        # Base risk basato sul vantaggio
         if adv >= 3:
-            risk_multiplier = 1.8
-        elif style == "defensive":
+            # Molto avanti: essere conservativi (penalità alte)
             risk_multiplier = 1.5
-        elif style == "balanced":
-            risk_multiplier = 1.2
-        elif style == "aggressive":
-            risk_multiplier = 0.9
-        else:  # desperate
-            risk_multiplier = 0.5
+        elif adv <= -3:
+            # Molto indietro: rischiare di più (penalità basse)
+            risk_multiplier = 0.7
+        else:
+            # Situazione equilibrata: usa style
+            if style == "defensive":
+                risk_multiplier = 1.3
+            elif style == "aggressive":
+                risk_multiplier = 0.9
+            else:  # balanced
+                risk_multiplier = 1.1
         
         # Apply Match Context
         risk_multiplier *= risk_factor
@@ -1148,6 +1170,8 @@ class ScopaBot:
     def __init__(self, name="Bot"):
         self.name = name
         self.memory = CardMemory()
+        self.last_method = "heuristic"  # Traccia metodo usato per log
+        self.last_chosen_score = 0       # Score della mossa scelta
     
     def _update_memory_and_inference(self, state: GameState, last_action_desc: str):
         """Common logic to update memory and perform negative inference."""
@@ -1171,50 +1195,71 @@ class ScopaBot:
         self.memory.update(state, my_player)
     
     def _lookahead_penalty(self, state: GameState, move: Move) -> int:
-        """Valuta la risposta dell'avversario (1-ply lookahead) - v12.29 AGGRESSIVE.
-        
-        Penalizza MOLTO fortemente mosse che danno SCOPA/SETTEBELLO all'avversario.
+        """Valuta la risposta dell'avversario (1-ply lookahead) - v12.30.
+
+        Penalizza mosse che danno opportunità all'avversario.
+        Usa euristica semplificata (non score_move) per performance.
+
+        Pesi lookahead (separati da score_move per tuning indipendente):
+        - LOOKAHEAD_BASE_CAPTURE: valore base cattura
+        - LOOKAHEAD_SETTEBELLO: peso settebello (critico)
+        - LOOKAHEAD_SCOPA: peso scopa (molto importante)
+        - LOOKAHEAD_DENARO: peso per denaro
+        - LOOKAHEAD_SEVEN: peso per 7 (primiera)
+        - LOOKAHEAD_CARD: peso per carta generica
         """
         from scopa_core import apply_move
-        
+
+        # Costanti lookahead (v12.29 validated - 59% WR)
+        LOOKAHEAD_BASE_CAPTURE = 15
+        LOOKAHEAD_SETTEBELLO = 320    # ~P.MAX * 0.64 - catturare settebello è critico
+        LOOKAHEAD_SCOPA = 220         # ~P.MAX * 0.44 - scopa vale 1 punto
+        LOOKAHEAD_DENARO = 28         # denari per punto denari
+        LOOKAHEAD_SEVEN = 24          # 7 per primiera
+        LOOKAHEAD_CARD = 10           # carta generica per punto carte
+
+        # Moltiplicatori penalità (quanto del best_opp diventa penalty)
+        PENALTY_SETTEBELLO = 0.55     # Se avversario può prendere settebello
+        PENALTY_SCOPA = 0.45          # Se avversario può fare scopa
+        PENALTY_NORMAL = 0.28         # Cattura normale
+
         next_state = apply_move(state, move)
-        
+
         # Se avversario non ha carte, nessuna penalità
         if not next_state.current.hand:
             return 0
-        
+
         opp_moves = get_valid_moves(next_state)
         if not opp_moves:
             return 0
-        
-        # Trova miglior score avversario (euristica semplificata)
+
+        # Trova miglior score avversario
         best_opp = 0
         has_scopa_option = False
         has_settebello_option = False
-        
+
         for m in opp_moves:
             opp_score = 0
             if m.is_capture:
-                opp_score += 15
+                opp_score += LOOKAHEAD_BASE_CAPTURE
                 if any(c.is_settebello for c in m.cards_captured):
-                    opp_score += 320  # v12.29: Increased from 280
+                    opp_score += LOOKAHEAD_SETTEBELLO
                     has_settebello_option = True
                 if m.is_scopa:
-                    opp_score += 220  # v12.29: Increased from 180
+                    opp_score += LOOKAHEAD_SCOPA
                     has_scopa_option = True
-                opp_score += sum(28 for c in m.cards_captured if c.is_denaro)  # Increased
-                opp_score += sum(24 for c in m.cards_captured if c.value == 7)  # Increased
-                opp_score += len(m.cards_captured) * 10
+                opp_score += sum(LOOKAHEAD_DENARO for c in m.cards_captured if c.is_denaro)
+                opp_score += sum(LOOKAHEAD_SEVEN for c in m.cards_captured if c.value == 7)
+                opp_score += len(m.cards_captured) * LOOKAHEAD_CARD
             best_opp = max(best_opp, opp_score)
-        
-        # v12.29: VERY HEAVY penalty if opponent can make SCOPA
+
+        # Applica penalità appropriata
         if has_settebello_option:
-            return -int(best_opp * 0.55)  # 55% penalty for settebello
+            return -int(best_opp * PENALTY_SETTEBELLO)
         if has_scopa_option:
-            return -int(best_opp * 0.45)  # 45% penalty for scopa risk
-        
-        # Normal penalty for other good moves
-        return -int(best_opp * 0.28)
+            return -int(best_opp * PENALTY_SCOPA)
+
+        return -int(best_opp * PENALTY_NORMAL)
 
 
 
@@ -1237,7 +1282,17 @@ class ScopaBot:
         
         if len(moves) == 1:
             return moves[0]
-            
+
+        # === PROTEZIONE ASSOLUTA 7 (v12.30) ===
+        # Mai scartare un 7 se c'è un'alternativa
+        discards = [m for m in moves if not m.is_capture]
+        if discards:
+            seven_discards = [m for m in discards if m.card_played.value == 7]
+            non_seven_discards = [m for m in discards if m.card_played.value != 7]
+            if seven_discards and non_seven_discards:
+                # Rimuovi la possibilità di scartare 7
+                moves = [m for m in moves if m not in seven_discards]
+
         # === PROTEZIONE SETTEBELLO (bypassa lookahead) ===
         # Se possiamo prendere il settebello, lo prendiamo SEMPRE
         captures = [m for m in moves if m.is_capture]
@@ -1280,33 +1335,33 @@ class ScopaBot:
         # Sort scores
         scored.sort(key=lambda x: x[0], reverse=True)
         
-        # === v12.22: MINIMAX REATTIVATO come tiebreaker ===
-        # Usato solo in endgame quando l'euristica ha punteggi molto vicini
-        if should_use_minimax(state) and len(scored) > 1:
-            best_score = scored[0][0]
-            second_score = scored[1][0]
-            heuristic_diff = best_score - second_score
-            
-            # Solo se mosse molto vicine (diff < 50) - euristica non è sicura
-            if heuristic_diff < 50:
-                # Raccogli candidati con score simile (max 3)
-                candidates = [x for x in scored if x[0] >= best_score - 50][:3]
-                
-                if len(candidates) > 1:
-                    # Usa minimax per decidere tra candidati equivalenti
-                    best_mm_score = -9999
-                    best_move = candidates[0][1]
-                    my_player = state.current_player
-                    
-                    for _, move, _ in candidates:
-                        # Applica mossa e valuta con minimax
-                        next_state = apply_move(clone_game_state(state), move)
-                        mm_score, _ = minimax(next_state, 6, my_player, False)  # False = next is opponent
-                        if mm_score > best_mm_score:
-                            best_mm_score = mm_score
-                            best_move = move
-                    
-                    return best_move
+        # === v12.22: MINIMAX DISABILITATO (v12.30) ===
+        # Minimax causava decisioni sbagliate - si affida all'euristica + MC
+        # if should_use_minimax(state) and len(scored) > 1:
+        #     best_score = scored[0][0]
+        #     second_score = scored[1][0]
+        #     heuristic_diff = best_score - second_score
+        #
+        #     # Solo se mosse molto vicine (diff < 50) - euristica non è sicura
+        #     if heuristic_diff < 50:
+        #         # Raccogli candidati con score simile (max 3)
+        #         candidates = [x for x in scored if x[0] >= best_score - 50][:3]
+        #
+        #         if len(candidates) > 1:
+        #             # Usa minimax per decidere tra candidati equivalenti
+        #             best_mm_score = -9999
+        #             best_move = candidates[0][1]
+        #             my_player = state.current_player
+        #
+        #             for _, move, _ in candidates:
+        #                 # Applica mossa e valuta con minimax
+        #                 next_state = apply_move(clone_game_state(state), move)
+        #                 mm_score, _ = minimax(next_state, 6, my_player, False)  # False = next is opponent
+        #                 if mm_score > best_mm_score:
+        #                     best_mm_score = mm_score
+        #                     best_move = move
+        #
+        #             return best_move
         
         # === MONTE CARLO v12.5: Smart MC con protezioni ===
         if use_monte_carlo and len(scored) > 1:
@@ -1318,6 +1373,8 @@ class ScopaBot:
             # Questo evita che MC scelga mosse stupide come scartare denari
             if heuristic_diff > 150:
                 # Decisione chiara, non serve MC
+                self.last_method = "heuristic"
+                self.last_chosen_score = scored[0][0]
                 return scored[0][1]
             
             # FIX 1: Threshold dinamico basato sulla qualità della mossa migliore
@@ -1334,16 +1391,22 @@ class ScopaBot:
             
             # Se c'è solo 1 candidato, skip MC
             if len(candidates) <= 1:
+                self.last_method = "heuristic"
+                self.last_chosen_score = scored[0][0]
                 return scored[0][1]
             
             mc_results = []
             for score, move, reasons in candidates:
                 win_rate = monte_carlo_evaluate(state, move, state.current_player, simulations=mc_simulations)
-                mc_results.append((win_rate, move))
-            
+                mc_results.append((win_rate, score, move))
+
             mc_results.sort(key=lambda x: x[0], reverse=True)
-            return mc_results[0][1]
-            
+            self.last_method = "monte_carlo"
+            self.last_chosen_score = mc_results[0][1]  # heuristic score della mossa scelta
+            return mc_results[0][2]
+
+        self.last_method = "heuristic"
+        self.last_chosen_score = scored[0][0]
         return scored[0][1]
     
     def get_all_evaluations(self, state: GameState, match_score: Tuple[int, int] = (0, 0), dealer: str = "unknown") -> List[Dict]:
