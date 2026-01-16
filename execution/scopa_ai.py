@@ -1291,7 +1291,11 @@ class ScopaBot:
             non_seven_discards = [m for m in discards if m.card_played.value != 7]
             if seven_discards and non_seven_discards:
                 # Rimuovi la possibilità di scartare 7
-                moves = [m for m in moves if m not in seven_discards]
+                filtered_moves = [m for m in moves if m not in seven_discards]
+                # SAFETY: Se il filtro svuota le mosse, mantieni gli scarti 7 come fallback
+                if filtered_moves:
+                    moves = filtered_moves
+                # else: mantieni moves originale (solo scarti 7 disponibili)
 
         # === PROTEZIONE SETTEBELLO (bypassa lookahead) ===
         # Se possiamo prendere il settebello, lo prendiamo SEMPRE
