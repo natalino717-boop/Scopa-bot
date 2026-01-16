@@ -667,7 +667,6 @@ function runBotStep() {
 
             setTimeout(() => {
                 if (msgEl) msgEl.innerText = `Move: ${move.description}`;
-                if (msgEl) msgEl.innerText = `Move: ${move.description}`;
 
                 // UPDATE REASONING
                 const reasonEl = document.getElementById("hud-reason");

@@ -166,7 +166,7 @@ class CardMemory:
             return 0.0
             
         unseen = self.unseen_cards()
-        if card not in unseen or opp_hand_size == 0:
+        if card not in unseen or opp_hand_size == 0 or len(unseen) == 0:
             return 0.0
         # Probabilità semplice: opp_hand_size / len(unseen)
         return min(1.0, opp_hand_size / len(unseen))
@@ -954,20 +954,25 @@ def clone_game_state(state: GameState) -> GameState:
 
 
 def evaluate_final_position(state: GameState, my_player: int) -> int:
-    """Valuta posizione finale per minimax. Score = differenza punti."""
+    """Valuta posizione finale per minimax. Score = differenza punti.
+    Note: This function is read-only and does not mutate the original state.
+    """
     from scopa_core import calculate_scores
-    
+
+    # Create a cloned state to avoid mutating the original
+    eval_state = clone_game_state(state)
+
     # SIMULATE ENDGAME SWEEP rule:
     # If cards remain on table, they go to the last capturer
-    if state.table and state.last_capturer is not None:
-        last_cap = state.last_capturer
-        state.players[last_cap].captured.extend(state.table)
-        state.table.clear()
-        
-    scores = calculate_scores(state)
+    if eval_state.table and eval_state.last_capturer is not None:
+        last_cap = eval_state.last_capturer
+        eval_state.players[last_cap].captured.extend(eval_state.table)
+        eval_state.table.clear()
+
+    scores = calculate_scores(eval_state)
     my_score = scores[my_player].total
     opp_score = scores[1 - my_player].total
-    
+
     return (my_score - opp_score) * 1000  # Scala per precisione
 
 
