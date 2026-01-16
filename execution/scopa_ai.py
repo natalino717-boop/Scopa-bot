@@ -731,19 +731,27 @@ def score_move(
             score -= P.MAX * 3
             reasons.append("7D A RISCHIO!")
         
-        # === ADVANCED CARD COUNTING (v9.2 disabled) ===
-        # Disabilitato temporaneamente per regressione performance
-        # danger_probs = memory.dangerous_cards_prob(new_table, opp_hand)
+        # === ADVANCED CARD COUNTING (v12.25 - RE-ENABLED CONSERVATIVELY) ===
+        # Only use in mid-game (10-30 cards seen) where inference is most reliable
+        seen_count = len(memory.seen) if memory else 0
+        opp_hand = len(state.opponent.hand) if hasattr(state, 'opponent') else 3
         
-        # Scopa vale circa P.VERY_HIGH. Penalty = Prob * Value * SafetyFactor (1.2)
-        # if danger_probs["scopa_card"] > 0.2:
-        #    expected_loss = int(P.VERY_HIGH * danger_probs["scopa_card"] * 1.2)
-        #    score -= expected_loss
-        
-        # Se bassa probabilità di capture = config più sicura
-        # if danger_probs["capture_card"] < 0.25:
-        #    bonus = int(P.MEDIUM * (1.0 - danger_probs["capture_card"]))
-        #    score += bonus
+        if memory and 10 <= seen_count <= 30:
+            danger_probs = memory.dangerous_cards_prob(new_table, opp_hand)
+            
+            # High scopa probability = extra penalty (on top of existing scopa_prob penalty)
+            if danger_probs["scopa_card"] > 0.35:
+                # Very dangerous - add moderate penalty
+                extra_penalty = int(P.MEDIUM * (danger_probs["scopa_card"] - 0.35) * 2)
+                score -= extra_penalty
+                reasons.append(f"ACC: scopa risk {int(danger_probs['scopa_card']*100)}%")
+            
+            # Low capture probability = bonus for safe configuration
+            if danger_probs["capture_card"] < 0.2:
+                bonus = int(P.LOW * (1.0 - danger_probs["capture_card"]))
+                score += bonus
+                reasons.append("ACC: low capture risk")
+
         
         # === BONUS CONFIGURAZIONE SICURA (v7.3) ===
         # Tavolo con somma alta e molte carte = difficile fare scopa
@@ -1171,9 +1179,10 @@ class ScopaBot:
         self.memory.update(state, my_player)
     
     def _lookahead_penalty(self, state: GameState, move: Move) -> int:
-        """Valuta la risposta dell'avversario (1-ply lookahead).
+        """Valuta la risposta dell'avversario (2-ply lookahead - v12.26).
         
-        Come Pro/HumanPro: penalizza mosse che danno buone opzioni all'avversario.
+        1-ply: Cosa può fare l'avversario dopo la nostra mossa
+        2-ply: Cosa possiamo fare NOI dopo la risposta dell'avversario
         """
         from scopa_core import apply_move
         
@@ -1187,8 +1196,10 @@ class ScopaBot:
         if not opp_moves:
             return 0
         
-        # Trova miglior score avversario (euristica semplificata)
-        best_opp = 0
+        # === 1-PLY: Trova miglior mossa avversario ===
+        best_opp_score = 0
+        best_opp_move = None
+        
         for m in opp_moves:
             opp_score = 0
             if m.is_capture:
@@ -1200,10 +1211,46 @@ class ScopaBot:
                 opp_score += sum(26 for c in m.cards_captured if c.is_denaro)
                 opp_score += sum(22 for c in m.cards_captured if c.value == 7)
                 opp_score += len(m.cards_captured) * 9
-            best_opp = max(best_opp, opp_score)
+            if opp_score > best_opp_score:
+                best_opp_score = opp_score
+                best_opp_move = m
         
-        # Penalizza se avversario ha buone opzioni (-22% del suo miglior score)
-        return -int(best_opp * 0.22)
+        # === 2-PLY: Valuta la nostra contro-risposta ===
+        # Se l'avversario fa una mossa forte, possiamo recuperare?
+        counter_bonus = 0
+        if best_opp_move and best_opp_score > 50:  # Solo se avversario ha mossa significativa
+            state_after_opp = apply_move(next_state, best_opp_move)
+            
+            # Nostre mosse disponibili dopo la risposta avversario
+            if state_after_opp.current.hand:  # Abbiamo ancora carte
+                our_responses = get_valid_moves(state_after_opp)
+                
+                if our_responses:
+                    # Trova la nostra migliore contro-risposta
+                    best_counter = 0
+                    for r in our_responses:
+                        counter_score = 0
+                        if r.is_capture:
+                            counter_score += 15
+                            if any(c.is_settebello for c in r.cards_captured):
+                                counter_score += 280
+                            if r.is_scopa:
+                                counter_score += 120
+                            counter_score += sum(26 for c in r.cards_captured if c.is_denaro)
+                            counter_score += sum(22 for c in r.cards_captured if c.value == 7)
+                            counter_score += len(r.cards_captured) * 9
+                        best_counter = max(best_counter, counter_score)
+                    
+                    # Se possiamo recuperare, riduci la penalità
+                    # La nostra risposta compensa parte del danno dell'avversario
+                    counter_bonus = int(best_counter * 0.15)  # 15% di recovery
+        
+        # Penalità netta = danno avversario - nostro recupero
+        net_penalty = best_opp_score - counter_bonus
+        
+        # Penalizza (-20% del danno netto)
+        return -int(net_penalty * 0.20)
+
 
     def choose_move(self, 
                    state: GameState, 
